@@ -1,5 +1,6 @@
 protection=2REP
 HW_chassis=X205
+SSD=2
 
 
 ### 15 nodes 128kb write

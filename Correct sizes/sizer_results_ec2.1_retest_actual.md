@@ -1,5 +1,6 @@
 protection=EC2.1
 HW_chassis=X205
+SSD=2
 
 
 ### 16 nodes 8kb write
