@@ -3,87 +3,44 @@ HW_chassis=X205
 SSD=2
 HDD=12
 
-
-### 15 nodes 128kb write
-INFO[11:32:27] Load started at: Fri Oct 25 2024 11:32:27 GMT+0000 (UTC) source=console 
-INFO[11:42:29] Load finished at: Fri Oct 25 2024 11:42:29 GMT+0000 (UTC) source=console  
-█ setup
-
-```
- █ teardown
-
- aws_obj_put_bytes......: 291 GB  484 MB/s
- aws_obj_put_duration...: avg=294.04ms min=37.05ms  med=202.21ms max=7.74s p(90)=473.3ms  p(95)=699.21ms
- aws_obj_put_success....: 2222854 3693.309977/s
- data_received..........: 0 B     0 B/s
- data_sent..............: 291 GB  483 MB/s
- iteration_duration.....: avg=303.8ms  min=300.01µs med=210.64ms max=7.75s p(90)=482.91ms p(95)=708.74ms
- iterations.............: 2222854 3693.309977/s
- vus....................: 32      min=32        max=1125
-```
-
-running (10m01.9s), 0000/1125 VUs, 2222854 complete and 0 interrupted iterations  
-write ✓ [======================================] 1125 VUs 10m0s
-
-INFO[11:32:26] Load started at: Fri Oct 25 2024 11:32:26 GMT+0000 (UTC) source=console 
-INFO[11:42:28] Load finished at: Fri Oct 25 2024 11:42:28 GMT+0000 (UTC) source=console  
-█ setup
-
-```
- █ teardown
-
- aws_obj_put_bytes......: 299 GB  497 MB/s
- aws_obj_put_duration...: avg=286.07ms min=38.43ms med=197.3ms  max=7.95s p(90)=463.71ms p(95)=688.14ms
- aws_obj_put_success....: 2283780 3791.548478/s
- data_received..........: 0 B     0 B/s
- data_sent..............: 299 GB  496 MB/s
- iteration_duration.....: avg=295.75ms min=3.49ms  med=207.46ms max=7.96s p(90)=473.79ms p(95)=697.61ms
- iterations.............: 2283780 3791.548478/s
- vus....................: 70      min=70        max=1125
-```
-
-running (10m02.3s), 0000/1125 VUs, 2283780 complete and 0 interrupted iterations  
-write ✓ [======================================] 1125 VUs 10m0s
-
 ### 15 nodes 8kb write
-INFO[13:08:47] Load started at:               Tue Oct 29 2024 13:08:47 GMT+0000 (UTC)  source=console
-INFO[13:18:47] Load finished at:              Tue Oct 29 2024 13:18:47 GMT+0000 (UTC)  source=console
+INFO[11:11:55] Load started at:               Fri Oct 25 2024 11:11:55 GMT+0000 (UTC)  source=console
+INFO[11:21:57] Load finished at:              Fri Oct 25 2024 11:21:57 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 27 GB   45 MB/s
-     aws_obj_put_duration...: avg=202.83ms min=28.75ms  med=156.27ms max=13.69s p(90)=343.86ms p(95)=463.23ms
-     aws_obj_put_success....: 3294391 5485.850446/s
-     data_received..........: 0 B     0 B/s
-     data_sent..............: 27 GB   45 MB/s
-     iteration_duration.....: avg=211.63ms min=213.78µs med=164.61ms max=13.7s  p(90)=351.31ms p(95)=472.31ms
-     iterations.............: 3294391 5485.850446/s
-     vus....................: 1162    min=1162      max=1162
+     aws_obj_put_bytes......: 7.6 GB 13 MB/s
+     aws_obj_put_duration...: avg=744.03ms min=31.39ms  med=302.29ms max=13.85s p(90)=2.03s p(95)=2.82s
+     aws_obj_put_success....: 927223 1539.168897/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 7.6 GB 13 MB/s
+     iteration_duration.....: avg=752.9ms  min=269.05µs med=310.8ms  max=13.86s p(90)=2.03s p(95)=2.83s
+     iterations.............: 927223 1539.168897/s
+     vus....................: 19     min=19        max=1162
 
-running (10m00.5s), 0000/1162 VUs, 3294391 complete and 0 interrupted iterations
+running (10m02.4s), 0000/1162 VUs, 927223 complete and 0 interrupted iterations
 write ✓ [======================================] 1162 VUs  10m0s
 
-INFO[13:08:47] Load started at:               Tue Oct 29 2024 13:08:47 GMT+0000 (UTC)  source=console
-INFO[13:18:47] Load finished at:              Tue Oct 29 2024 13:18:47 GMT+0000 (UTC)  source=console
+INFO[11:11:58] Load started at:               Fri Oct 25 2024 11:11:58 GMT+0000 (UTC)  source=console
+INFO[11:21:58] Load finished at:              Fri Oct 25 2024 11:21:58 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 26 GB   44 MB/s
-     aws_obj_put_duration...: avg=209.34ms min=25.23ms  med=159.78ms max=15.07s p(90)=361.82ms p(95)=472.45ms
-     aws_obj_put_success....: 3198122 5328.039475/s
-     data_received..........: 0 B     0 B/s
-     data_sent..............: 26 GB   44 MB/s
-     iteration_duration.....: avg=217.99ms min=205.06µs med=166.34ms max=15.08s p(90)=370.3ms  p(95)=482.16ms
-     iterations.............: 3198122 5328.039475/s
-     vus....................: 1162    min=1162      max=1162
+     aws_obj_put_bytes......: 7.3 GB 12 MB/s
+     aws_obj_put_duration...: avg=770.4ms  min=28.08ms  med=332.09ms max=10.37s p(90)=2.08s p(95)=2.87s
+     aws_obj_put_success....: 895336 1490.153466/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 7.3 GB 12 MB/s
+     iteration_duration.....: avg=779.09ms min=179.67µs med=340.44ms max=10.38s p(90)=2.09s p(95)=2.88s
+     iterations.............: 895336 1490.153466/s
+     vus....................: 14     min=14        max=1162
 
-running (10m00.2s), 0000/1162 VUs, 3198122 complete and 0 interrupted iterations
+running (10m00.8s), 0000/1162 VUs, 895336 complete and 0 interrupted iterations
 write ✓ [======================================] 1162 VUs  10m0s
 
-### 15 nodes 8kb  read
-
+### 15 nodes 8kb read
 INFO[10:59:46] Load started at:               Fri Sep 27 2024 10:59:46 GMT+0000 (UTC)  source=console
 INFO[11:09:46] Load finished at:              Fri Sep 27 2024 11:09:46 GMT+0000 (UTC)  source=console
      █ setup
@@ -121,124 +78,337 @@ running (10m00.1s), 0000/1162 VUs, 6216476 complete and 0 interrupted iterations
 read ✓ [======================================] 1162 VUs  10m0s
 
 ### 15 nodes 1mb write
-INFO[08:38:05] Load started at:               Tue Oct 01 2024 08:38:05 GMT+0000 (UTC)  source=console
-INFO[08:48:06] Load finished at:              Tue Oct 01 2024 08:48:06 GMT+0000 (UTC)  source=console
+INFO[18:47:51] Load started at:               Thu Oct 24 2024 18:47:51 GMT+0000 (UTC)  source=console
+INFO[18:57:51] Load finished at:              Thu Oct 24 2024 18:57:51 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 749 GB 1.2 GB/s
-     aws_obj_put_duration...: avg=1.02s min=92.93ms  med=890.94ms max=7.28s p(90)=1.73s p(95)=2.13s
-     aws_obj_put_success....: 714196 1188.984147/s
+     aws_obj_put_bytes......: 731 GB 1.2 GB/s
+     aws_obj_put_duration...: avg=630.05ms min=79.84ms  med=524.56ms max=5.98s p(90)=1.09s p(95)=1.36s
+     aws_obj_put_success....: 696837 1160.258289/s
      data_received..........: 0 B    0 B/s
-     data_sent..............: 749 GB 1.2 GB/s
-     iteration_duration.....: avg=1.04s min=404.89ms med=906.69ms max=7.3s  p(90)=1.75s p(95)=2.15s
-     iterations.............: 714196 1188.984147/s
-     vus....................: 101    min=101       max=1240
+     data_sent..............: 730 GB 1.2 GB/s
+     iteration_duration.....: avg=646.07ms min=346.19µs med=540.6ms  max=6s    p(90)=1.1s  p(95)=1.38s
+     iterations.............: 696837 1160.258289/s
+     vus....................: 750    min=750       max=750
 
-running (10m00.7s), 0000/1240 VUs, 714196 complete and 0 interrupted iterations
-write ✓ [======================================] 1240 VUs  10m0s
+running (10m00.6s), 000/750 VUs, 696837 complete and 0 interrupted iterations
+write ✓ [======================================] 750 VUs  10m0s
 
-INFO[08:38:03] Load started at:               Tue Oct 01 2024 08:38:03 GMT+0000 (UTC)  source=console
-INFO[08:48:06] Load finished at:              Tue Oct 01 2024 08:48:06 GMT+0000 (UTC)  source=console
+INFO[18:47:50] Load started at:               Thu Oct 24 2024 18:47:50 GMT+0000 (UTC)  source=console
+INFO[18:57:51] Load finished at:              Thu Oct 24 2024 18:57:51 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 804 GB 1.3 GB/s
-     aws_obj_put_duration...: avg=954.82ms min=90.12ms  med=853.66ms max=6.97s p(90)=1.57s p(95)=1.87s
-     aws_obj_put_success....: 766972 1273.554028/s
+     aws_obj_put_bytes......: 737 GB 1.2 GB/s
+     aws_obj_put_duration...: avg=624.98ms min=81.17ms med=516.02ms max=6.27s p(90)=1.08s p(95)=1.37s
+     aws_obj_put_success....: 702575 1168.294319/s
      data_received..........: 0 B    0 B/s
-     data_sent..............: 804 GB 1.3 GB/s
-     iteration_duration.....: avg=970.67ms min=323.62ms med=869.42ms max=7s    p(90)=1.59s p(95)=1.89s
-     iterations.............: 766972 1273.554028/s
-     vus....................: 33     min=33        max=1240
+     data_sent..............: 736 GB 1.2 GB/s
+     iteration_duration.....: avg=640.87ms min=297.2µs med=531.85ms max=6.29s p(90)=1.1s  p(95)=1.39s
+     iterations.............: 702575 1168.294319/s
+     vus....................: 134    min=134       max=750
 
-running (10m02.2s), 0000/1240 VUs, 766972 complete and 0 interrupted iterations
-write ✓ [======================================] 1240 VUs  10m0s
+running (10m01.4s), 000/750 VUs, 702575 complete and 0 interrupted iterations
+write ✓ [======================================] 750 VUs  10m0s
+
+### 15 nodes 1mb read
+INFO[19:08:31] Load started at:               Thu Oct 24 2024 19:08:31 GMT+0000 (UTC)  source=console
+INFO[19:18:33] Load finished at:              Thu Oct 24 2024 19:18:33 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 1.5 TB  2.5 GB/s
+     aws_obj_get_duration...: avg=308.08ms min=25.92ms  med=269.09ms max=3.71s p(90)=532.69ms p(95)=640.94ms
+     aws_obj_get_success....: 1460632 2429.066386/s
+     data_received..........: 1.5 TB  2.5 GB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=308.17ms min=204.61µs med=269.18ms max=3.71s p(90)=532.78ms p(95)=641.03ms
+     iterations.............: 1460632 2429.066386/s
+     vus....................: 33      min=33        max=750
+
+running (10m01.3s), 000/750 VUs, 1460632 complete and 0 interrupted iterations
+read ✓ [======================================] 750 VUs  10m0s
+
+INFO[19:08:33] Load started at:               Thu Oct 24 2024 19:08:33 GMT+0000 (UTC)  source=console
+INFO[19:18:34] Load finished at:              Thu Oct 24 2024 19:18:34 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 1.5 TB  2.6 GB/s
+     aws_obj_get_duration...: avg=305.87ms min=25.36ms  med=267.11ms max=3.65s p(90)=528.32ms p(95)=636.35ms
+     aws_obj_get_success....: 1470895 2449.291112/s
+     data_received..........: 1.5 TB  2.6 GB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=305.96ms min=203.74µs med=267.2ms  max=3.65s p(90)=528.41ms p(95)=636.44ms
+     iterations.............: 1470895 2449.291112/s
+     vus....................: 750     min=750       max=750
+
+running (10m00.5s), 000/750 VUs, 1470895 complete and 0 interrupted iterations
+read ✓ [======================================] 750 VUs  10m0s
+
+### 15 nodes 128kb write
+INFO[18:11:17] Load started at:               Thu Oct 24 2024 18:11:17 GMT+0000 (UTC)  source=console
+INFO[18:21:20] Load finished at:              Thu Oct 24 2024 18:21:20 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 256 GB  425 MB/s
+     aws_obj_put_duration...: avg=336.03ms min=32.4ms   med=188.13ms max=11.5s  p(90)=531.26ms p(95)=852.75ms
+     aws_obj_put_success....: 1955061 3239.453703/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 256 GB  424 MB/s
+     iteration_duration.....: avg=345.74ms min=919.13µs med=198.01ms max=11.51s p(90)=541.14ms p(95)=862.51ms
+     iterations.............: 1955061 3239.453703/s
+     vus....................: 119     min=119       max=1125
+
+running (10m03.5s), 0000/1125 VUs, 1955061 complete and 0 interrupted iterations
+write ✓ [======================================] 1125 VUs  10m0s
+
+INFO[18:11:14] Load started at:               Thu Oct 24 2024 18:11:14 GMT+0000 (UTC)  source=console
+INFO[18:21:18] Load finished at:              Thu Oct 24 2024 18:21:18 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 268 GB  444 MB/s
+     aws_obj_put_duration...: avg=320.62ms min=32.73ms  med=185.89ms max=11.59s p(90)=470.47ms p(95)=747.61ms
+     aws_obj_put_success....: 2046783 3388.714835/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 268 GB  444 MB/s
+     iteration_duration.....: avg=330.26ms min=284.08µs med=196.56ms max=11.59s p(90)=479.76ms p(95)=757.18ms
+     iterations.............: 2046783 3388.714835/s
+     vus....................: 18      min=18        max=1125
+
+running (10m04.0s), 0000/1125 VUs, 2046783 complete and 0 interrupted iterations
+write ✓ [======================================] 1125 VUs  10m0s
 
 ### 15 nodes 128kb read
-INFO[12:07:08] Load started at:               Fri Oct 25 2024 12:07:08 GMT+0000 (UTC)  source=console
-INFO[12:17:08] Load finished at:              Fri Oct 25 2024 12:17:08 GMT+0000 (UTC)  source=console
+INFO[18:31:27] Load started at:               Thu Oct 24 2024 18:31:27 GMT+0000 (UTC)  source=console
+INFO[18:41:27] Load finished at:              Thu Oct 24 2024 18:41:27 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 513 GB  854 MB/s
-     aws_obj_get_duration...: avg=172.39ms min=10.45ms  med=123.98ms max=12.81s p(90)=324.78ms p(95)=408.65ms
-     aws_obj_get_fails......: 39      0.064967/s
-     aws_obj_get_success....: 3913081 6518.457511/s
-     data_received..........: 513 GB  854 MB/s
+     aws_obj_get_bytes......: 576 GB  959 MB/s
+     aws_obj_get_duration...: avg=153.5ms  min=9.91ms med=124.4ms  max=2.92s p(90)=285.35ms p(95)=350.9ms 
+       3       0.004995/s
+     aws_obj_get_success....: 4394740 7317.791677/s
+     data_received..........: 576 GB  958 MB/s
      data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=172.47ms min=616.92µs med=124.06ms max=12.81s p(90)=324.87ms p(95)=408.73ms
-     iterations.............: 3913120 6518.522478/s
+     iteration_duration.....: avg=153.58ms min=2.01ms med=124.48ms max=2.92s p(90)=285.44ms p(95)=350.99ms
+     iterations.............: 4394743 7317.796672/s
      vus....................: 1125    min=1125      max=1125
 
-running (10m00.3s), 0000/1125 VUs, 3913120 complete and 0 interrupted iterations
+running (10m00.6s), 0000/1125 VUs, 4394743 complete and 0 interrupted iterations
 read ✓ [======================================] 1125 VUs  10m0s
 
-INFO[12:07:08] Load started at:               Fri Oct 25 2024 12:07:08 GMT+0000 (UTC)  source=console
-INFO[12:17:07] Load finished at:              Fri Oct 25 2024 12:17:07 GMT+0000 (UTC)  source=console
+INFO[18:31:27] Load started at:               Thu Oct 24 2024 18:31:27 GMT+0000 (UTC)  source=console
+INFO[18:41:28] Load finished at:              Thu Oct 24 2024 18:41:28 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 513 GB  854 MB/s
-     aws_obj_get_duration...: avg=172.38ms min=9.74ms  med=125.89ms max=9.9s p(90)=329.45ms p(95)=415.24ms
-     aws_obj_get_fails......: 40      0.066614/s
-     aws_obj_get_success....: 3913729 6517.713245/s
-     data_received..........: 513 GB  854 MB/s
+     aws_obj_get_bytes......: 582 GB  969 MB/s
+     aws_obj_get_duration...: avg=152.03ms min=8.36ms med=122.96ms max=2.96s p(90)=282.92ms p(95)=348.06ms
+     aws_obj_get_fails......: 15      0.024986/s
+     aws_obj_get_success....: 4436794 7390.615128/s
+     data_received..........: 581 GB  968 MB/s
      data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=172.46ms min=837.2µs med=125.97ms max=9.9s p(90)=329.54ms p(95)=415.33ms
-     iterations.............: 3913769 6517.779859/s
+     iteration_duration.....: avg=152.12ms min=2.58ms med=123.05ms max=2.96s p(90)=283.01ms p(95)=348.15ms
+     iterations.............: 4436809 7390.640115/s
      vus....................: 1125    min=1125      max=1125
 
-running (10m00.5s), 0000/1125 VUs, 3913769 complete and 0 interrupted iterations
+running (10m00.3s), 0000/1125 VUs, 4436809 complete and 0 interrupted iterations
 read ✓ [======================================] 1125 VUs  10m0s
+
+### 15 nodes 128mb write
+INFO[10:03:02] Load started at:               Tue Oct 01 2024 10:03:02 GMT+0000 (UTC)  source=console
+INFO[10:13:07] Load finished at:              Tue Oct 01 2024 10:13:07 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 733 GB 1.2 GB/s
+     aws_obj_put_duration...: avg=23.88s min=7.61s    med=19.78s max=57.43s p(90)=39.61s p(95)=42.97s
+     aws_obj_put_success....: 5462   9.015756/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 733 GB 1.2 GB/s
+     iteration_duration.....: avg=24.32s min=190.35ms med=20.21s max=57.9s  p(90)=40.04s p(95)=43.42s
+     iterations.............: 5455   9.004202/s
+     vus....................: 7      min=0      max=225
+
+running (10m05.8s), 000/225 VUs, 5455 complete and 180 interrupted iterations
+write ✓ [======================================] 225 VUs  10m0s
+
+INFO[10:03:00] Load started at:               Tue Oct 01 2024 10:03:00 GMT+0000 (UTC)  source=console
+INFO[10:13:06] Load finished at:              Tue Oct 01 2024 10:13:06 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 732 GB 1.2 GB/s
+     aws_obj_put_duration...: avg=23.84s min=7.01s    med=19.74s max=56.65s p(90)=39.01s p(95)=42.57s
+     aws_obj_put_success....: 5457   9.007967/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 732 GB 1.2 GB/s
+     iteration_duration.....: avg=24.27s min=159.44ms med=20.13s max=57.07s p(90)=39.43s p(95)=43.01s
+     iterations.............: 5453   9.001364/s
+     vus....................: 4      min=0      max=225
+
+running (10m05.8s), 000/225 VUs, 5453 complete and 183 interrupted iterations
+write ✓ [======================================] 225 VUs  10m0s
+
+### 15 nodes 128mb read
+INFO[10:16:17] Load started at:               Tue Oct 01 2024 10:16:17 GMT+0000 (UTC)  source=console
+INFO[10:26:28] Load finished at:              Tue Oct 01 2024 10:26:28 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 1.3 TB 2.2 GB/s
+     aws_obj_get_duration...: avg=13.57s min=1.86s    med=13.08s max=1m25s p(90)=20.8s p(95)=23.53s
+     aws_obj_get_success....: 9911   16.199118/s
+     data_received..........: 1.3 TB 2.2 GB/s
+     data_sent..............: 0 B    0 B/s
+     iteration_duration.....: avg=13.57s min=286.54ms med=13.08s max=1m25s p(90)=20.8s p(95)=23.53s
+     iterations.............: 9911   16.199118/s
+     vus....................: 10     min=10      max=225
+
+running (10m11.8s), 000/225 VUs, 9911 complete and 126 interrupted iterations
+read ✓ [======================================] 225 VUs  10m0s
+
+INFO[10:16:18] Load started at:               Tue Oct 01 2024 10:16:18 GMT+0000 (UTC)  source=console
+INFO[10:26:30] Load finished at:              Tue Oct 01 2024 10:26:30 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 1.4 TB 2.3 GB/s
+     aws_obj_get_duration...: avg=12.91s min=1.93s    med=12.37s max=1m21s p(90)=19.68s p(95)=22.19s
+     aws_obj_get_success....: 10458  17.105048/s
+     data_received..........: 1.4 TB 2.3 GB/s
+     data_sent..............: 0 B    0 B/s
+     iteration_duration.....: avg=12.9s  min=216.25ms med=12.37s max=1m21s p(90)=19.68s p(95)=22.19s
+     iterations.............: 10458  17.105048/s
+     vus....................: 1      min=1       max=225
+
+running (10m11.4s), 000/225 VUs, 10458 complete and 78 interrupted iterations
+read ✓ [======================================] 225 VUs  10m0s
+
+### 14 nodes 8kb write
+INFO[12:25:12] Load started at:               Tue Oct 01 2024 12:25:12 GMT+0000 (UTC)  source=console
+INFO[12:35:15] Load finished at:              Tue Oct 01 2024 12:35:15 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 6.3 GB 10 MB/s
+     aws_obj_put_duration...: avg=844.1ms  min=32.64ms med=689.21ms max=8s    p(90)=1.65s p(95)=2.09s
+     aws_obj_put_success....: 764716 1269.21642/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 6.2 GB 10 MB/s
+     iteration_duration.....: avg=852.77ms min=2.37ms  med=697.97ms max=8.01s p(90)=1.66s p(95)=2.1s 
+     iterations.............: 764716 1269.21642/s
+     vus....................: 4      min=4        max=1085
+
+running (10m02.5s), 0000/1085 VUs, 764716 complete and 0 interrupted iterations
+write ✓ [======================================] 1085 VUs  10m0
+
+INFO[12:25:14] Load started at:               Tue Oct 01 2024 12:25:14 GMT+0000 (UTC)  source=console
+INFO[12:35:15] Load finished at:              Tue Oct 01 2024 12:35:15 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 6.2 GB 10 MB/s
+     aws_obj_put_duration...: avg=849.57ms min=35.56ms  med=695.08ms max=8.2s  p(90)=1.66s p(95)=2.09s
+     aws_obj_put_success....: 758571 1261.921216/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 6.2 GB 10 MB/s
+     iteration_duration.....: avg=858.33ms min=191.01ms med=703.83ms max=8.21s p(90)=1.67s p(95)=2.1s 
+     iterations.............: 758571 1261.921216/s
+     vus....................: 11     min=11        max=1085
+
+running (10m01.1s), 0000/1085 VUs, 758571 complete and 0 interrupted iterations
+write ✓ [======================================] 1085 VUs  10m0s
 
 ### 14 nodes 8kb read
-INFO[14:25:23] Load started at:               Tue Oct 29 2024 14:25:23 GMT+0000 (UTC)  source=console
-INFO[14:35:24] Load finished at:              Tue Oct 29 2024 14:35:24 GMT+0000 (UTC)  source=console
+INFO[12:36:00] Load started at:               Tue Oct 01 2024 12:36:00 GMT+0000 (UTC)  source=console
+INFO[12:46:01] Load finished at:              Tue Oct 01 2024 12:46:01 GMT+0000 (UTC)  source=console
+          aws_obj_get_bytes......: 34 GB   56 MB/s
+     aws_obj_get_duration...: avg=147.18ms min=5.63ms med=50.76ms max=12.22s p(90)=269.73ms p(95)=548.63ms
+     aws_obj_get_fails......: 32      0.053209/s
+     aws_obj_get_success....: 4136961 6878.801908/s
+     data_received..........: 34 GB   56 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=147.25ms min=4.31ms med=50.84ms max=12.23s p(90)=269.82ms p(95)=548.7ms 
+     iterations.............: 4136993 6878.855117/s
+     vus....................: 46      min=46        max=1015
+
+running (10m01.4s), 0000/1015 VUs, 4136993 complete and 0 interrupted iterations
+read ✓ [======================================] 1015 VUs  10m0s
+
+INFO[12:36:00] Load started at:               Tue Oct 01 2024 12:36:00 GMT+0000 (UTC)  source=console
+INFO[12:46:01] Load finished at:              Tue Oct 01 2024 12:46:01 GMT+0000 (UTC)  source=console
+     aws_obj_get_bytes......: 34 GB   56 MB/s
+     aws_obj_get_duration...: avg=148.97ms min=5.6ms    med=51.58ms max=9.33s p(90)=276.81ms p(95)=562.85ms
+     aws_obj_get_fails......: 40      0.066649/s
+     aws_obj_get_success....: 4085283 6807.043604/s
+     data_received..........: 33 GB   56 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=149.05ms min=725.43ms med=51.66ms max=9.33s p(90)=276.89ms p(95)=562.91ms
+     iterations.............: 4085323 6807.110254/s
+     vus....................: 1015    min=1015      max=1015
+
+running (10m00.2s), 0000/1015 VUs, 4085323 complete and 0 interrupted iterations
+read ✓ [======================================] 1015 VUs  10m0s
+
+### 14 nodes 128kb write
+INFO[14:16:27] Load started at:               Tue Oct 01 2024 14:16:27 GMT+0000 (UTC)  source=console
+INFO[14:26:33] Load finished at:              Tue Oct 01 2024 14:26:33 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 47 GB   79 MB/s
-     aws_obj_get_duration...: avg=112.54ms min=6.9ms    med=70.01ms max=5.57s p(90)=204.23ms p(95)=304.31ms
-     aws_obj_get_fails......: 14      0.023316/s
-     aws_obj_get_success....: 5779318 9625.05624/s
-     data_received..........: 47 GB   79 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=112.62ms min=223.61µs med=70.08ms max=5.57s p(90)=204.31ms p(95)=304.39ms
-     iterations.............: 5779332 9625.079557/s
-     vus....................: 1085    min=1085      max=1085
+     aws_obj_put_bytes......: 226 GB  373 MB/s
+     aws_obj_put_duration...: avg=344.97ms min=25.44ms  med=234.98ms max=10.12s p(90)=644.37ms p(95)=866.24ms
+     aws_obj_put_success....: 1721729 2845.713104/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 225 GB  372 MB/s
+     iteration_duration.....: avg=354.63ms min=224.25ms med=244.21ms max=10.14s p(90)=654.31ms p(95)=875.96ms
+     iterations.............: 1721729 2845.713104/s
+     vus....................: 27      min=27        max=1015
 
-running (10m00.4s), 0000/1085 VUs, 5779332 complete and 0 interrupted iterations
-read ✓ [======================================] 1085 VUs  10m0s
+running (10m05.0s), 0000/1015 VUs, 1721729 complete and 27 interrupted iterations
+write ✓ [======================================] 1015 VUs  10m0s
 
-INFO[14:25:21] Load started at:               Tue Oct 29 2024 14:25:21 GMT+0000 (UTC)  source=console
-INFO[14:35:22] Load finished at:              Tue Oct 29 2024 14:35:22 GMT+0000 (UTC)  source=console
+INFO[14:16:26] Load started at:               Tue Oct 01 2024 14:16:26 GMT+0000 (UTC)  source=console
+INFO[14:26:31] Load finished at:              Tue Oct 01 2024 14:26:31 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 47 GB   78 MB/s
-     aws_obj_get_duration...: avg=114.21ms min=6.69ms med=71.03ms max=5.5s p(90)=208ms    p(95)=309.83ms
-     aws_obj_get_fails......: 11      0.01832/s
-     aws_obj_get_success....: 5695461 9485.35644/s
-     data_received..........: 47 GB   78 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=114.28ms min=595µs  med=71.11ms max=5.5s p(90)=208.08ms p(95)=309.91ms
-     iterations.............: 5695472 9485.37476/s
-     vus....................: 1085    min=1085     max=1085
+     aws_obj_put_bytes......: 238 GB  394 MB/s
+     aws_obj_put_duration...: avg=325.27ms min=26.65ms  med=224.1ms  max=9.87s p(90)=608.33ms p(95)=810.38ms
+     aws_obj_put_success....: 1818351 3005.39883/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 238 GB  393 MB/s
+     iteration_duration.....: avg=335.11ms min=241.17ms med=233.34ms max=9.88s p(90)=618.1ms  p(95)=820.23ms
+     iterations.............: 1818351 3005.39883/s
+     vus....................: 35      min=35       max=1015
 
-running (10m00.4s), 0000/1085 VUs, 5695472 complete and 0 interrupted iterations
-read ✓ [======================================] 1085 VUs  10m0s
-
+running (10m05.0s), 0000/1015 VUs, 1818351 complete and 35 interrupted iterations
+write ✓ [======================================] 1015 VUs  10m0s
 
 ### 14 nodes 128kb read
-INFO[14:30:00] Load started at:               Tue Oct 01 2024 14:30:00 GMT+0000 (UTC)  source=console
-INFO[14:40:02] Load finished at:              Tue Oct 01 2024 14:40:02 GMT+0000 (UTC) 
+INFO[14:30:00] Load started at:               Tue Oct 01 2024 14:30:00 GMT+0000 (UTC) source=console
+INFO[14:40:02] Load finished at:              Tue Oct 01 2024 14:40:02 GMT+0000 (UTC) source=console
      █ setup
 
      █ teardown
@@ -257,7 +427,7 @@ running (5m00.3s), 000/910 VUs, 2157537 complete and 0 interrupted iterations
 read ✓ [======================================] 910 VUs  5m0s
 
 INFO[14:30:00] Load started at:               Tue Oct 01 2024 14:30:00 GMT+0000 (UTC)  source=console
-INFO[14:40:02] Load finished at:              Tue Oct 01 2024 14:40:02 GMT+0000 (UTC) 
+INFO[14:40:02] Load finished at:              Tue Oct 01 2024 14:40:02 GMT+0000 (UTC) source=console
      █ setup
 
      █ teardown
@@ -274,7 +444,6 @@ INFO[14:40:02] Load finished at:              Tue Oct 01 2024 14:40:02 GMT+0000 
 
 running (5m00.2s), 000/910 VUs, 2114592 complete and 0 interrupted iterations
 read ✓ [======================================] 910 VUs  5m0s
-
 
 ### 14 nodes 1mb write
 INFO[15:12:43] Load started at:               Tue Oct 01 2024 15:12:43 GMT+0000 (UTC)  source=console
@@ -351,7 +520,7 @@ INFO[15:45:13] Load finished at:              Tue Oct 01 2024 15:45:13 GMT+0000 
 running (10m00.4s), 000/700 VUs, 1468784 complete and 0 interrupted iterations
 read ✓ [======================================] 700 VUs  10m0s
 
-### 14 nodes 128mib write
+### 14 nodes 128mb write
 INFO[16:03:55] Load started at:               Tue Oct 01 2024 16:03:55 GMT+0000 (UTC)  source=console
 INFO[16:13:56] Load finished at:              Tue Oct 01 2024 16:13:56 GMT+0000 (UTC)  source=console
      █ setup
@@ -388,118 +557,42 @@ INFO[16:13:57] Load finished at:              Tue Oct 01 2024 16:13:57 GMT+0000 
 running (10m05.5s), 000/210 VUs, 7609 complete and 134 interrupted iterations
 write ✓ [======================================] 210 VUs  10m0s
 
-### 14 nodes 128mb read
-INFO[16:16:04] Load started at:               Tue Oct 01 2024 16:16:04 GMT+0000 (UTC)  source=console
-INFO[16:26:08] Load finished at:              Tue Oct 01 2024 16:26:08 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 2.0 TB 3.3 GB/s
-     aws_obj_get_duration...: avg=7.13s min=1.93s    med=6.94s max=16.7s p(90)=9.41s p(95)=10.24s
-     aws_obj_get_success....: 14772  24.446237/s
-     data_received..........: 2.0 TB 3.3 GB/s
-     data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=7.13s min=283.98ms med=6.94s max=16.7s p(90)=9.41s p(95)=10.24s
-     iterations.............: 14772  24.446237/s
-     vus....................: 2      min=2       max=175
-
-running (10m04.3s), 000/175 VUs, 14772 complete and 0 interrupted iterations
-read ✓ [======================================] 175 VUs  10m0s
-
-INFO[16:16:02] Load started at:               Tue Oct 01 2024 16:16:02 GMT+0000 (UTC)  source=console
-INFO[16:26:08] Load finished at:              Tue Oct 01 2024 16:26:08 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 2.0 TB 3.3 GB/s
-     aws_obj_get_duration...: avg=7.18s min=2.09s    med=7s max=16.39s p(90)=9.37s p(95)=10.17s
-     aws_obj_get_success....: 14680  24.240416/s
-     data_received..........: 2.0 TB 3.3 GB/s
-     data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=7.18s min=231.04ms med=7s max=16.39s p(90)=9.37s p(95)=10.17s
-     iterations.............: 14680  24.240416/s
-     vus....................: 8      min=8       max=175
-
-running (10m05.6s), 000/175 VUs, 14680 complete and 6 interrupted iterations
-read ✓ [======================================] 175 VUs  10m0s
-
 ### 13 nodes 8kb write
-INFO[12:12:39] Load started at:               Tue Oct 29 2024 12:12:39 GMT+0000 (UTC)  source=console
-INFO[12:22:39] Load finished at:              Tue Oct 29 2024 12:22:39 GMT+0000 (UTC)  source=console
+INFO[17:56:58] Load started at:               Fri Oct 25 2024 17:56:58 GMT+0000 (UTC)  source=console
+INFO[18:07:00] Load finished at:              Fri Oct 25 2024 18:07:00 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 25 GB   42 MB/s
-     aws_obj_put_duration...: avg=186.81ms min=40ms     med=168.27ms max=9.01s p(90)=276.61ms p(95)=323.23ms
-     aws_obj_put_success....: 3090342 5146.871931/s
+     aws_obj_put_bytes......: 15 GB   25 MB/s
+     aws_obj_put_duration...: avg=315.65ms min=29.25ms med=173.51ms max=11.17s p(90)=545.06ms p(95)=1.03s
+     aws_obj_put_success....: 1865935 3099.652251/s
      data_received..........: 0 B     0 B/s
-     data_sent..............: 25 GB   42 MB/s
-     iteration_duration.....: avg=195.51ms min=695.82µs med=175.88ms max=9.01s p(90)=286.93ms p(95)=331.02ms
-     iterations.............: 3090342 5146.871931/s
-     vus....................: 1007    min=1007      max=1007
+     data_sent..............: 15 GB   25 MB/s
+     iteration_duration.....: avg=324.21ms min=1.43ms  med=184ms    max=11.18s p(90)=554.23ms p(95)=1.03s
+     iterations.............: 1865935 3099.652251/s
+     vus....................: 11      min=11        max=1007
 
-running (10m00.4s), 0000/1007 VUs, 3090342 complete and 0 interrupted iterations
+running (10m02.0s), 0000/1007 VUs, 1865935 complete and 0 interrupted iterations
 write ✓ [======================================] 1007 VUs  10m0s
 
-INFO[12:12:39] Load started at:               Tue Oct 29 2024 12:12:39 GMT+0000 (UTC)  source=console
-INFO[12:22:40] Load finished at:              Tue Oct 29 2024 12:22:40 GMT+0000 (UTC)  source=console
+INFO[17:57:00] Load started at:               Fri Oct 25 2024 17:57:00 GMT+0000 (UTC)  source=console
+INFO[18:07:01] Load finished at:              Fri Oct 25 2024 18:07:01 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 25 GB   42 MB/s
-     aws_obj_put_duration...: avg=187.49ms min=40.3ms   med=167.1ms  max=8.99s p(90)=283.28ms p(95)=333.09ms
-     aws_obj_put_success....: 3081423 5134.443718/s
+     aws_obj_put_bytes......: 15 GB   25 MB/s
+     aws_obj_put_duration...: avg=327.62ms min=29.63ms  med=176.64ms max=12.37s p(90)=596.61ms p(95)=1.06s
+     aws_obj_put_success....: 1798895 2989.984883/s
      data_received..........: 0 B     0 B/s
-     data_sent..............: 25 GB   42 MB/s
-     iteration_duration.....: avg=196.05ms min=207.08µs med=175.33ms max=9s    p(90)=290.37ms p(95)=340.99ms
-     iterations.............: 3081423 5134.443718/s
-     vus....................: 1007    min=1007      max=1007
+     data_sent..............: 15 GB   24 MB/s
+     iteration_duration.....: avg=336.26ms min=209.18µs med=185.53ms max=12.38s p(90)=605.54ms p(95)=1.07s
+     iterations.............: 1798895 2989.984883/s
+     vus....................: 485     min=485       max=1007
 
-running (10m00.1s), 0000/1007 VUs, 3081423 complete and 0 interrupted iterations
+running (10m01.6s), 0000/1007 VUs, 1798895 complete and 0 interrupted iterations
 write ✓ [======================================] 1007 VUs  10m0s
-
-### 13 nodes 8kb read
-INFO[12:31:08] Load started at:               Tue Oct 29 2024 12:31:08 GMT+0000 (UTC)  source=console
-INFO[12:41:08] Load finished at:              Tue Oct 29 2024 12:41:08 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 42 GB   70 MB/s
-     aws_obj_get_duration...: avg=117.73ms min=6.85ms med=71.01ms max=7.42s p(90)=229.65ms p(95)=343.45ms
-     aws_obj_get_fails......: 16      0.026641/s
-     aws_obj_get_success....: 5128094 8538.48851/s
-     data_received..........: 42 GB   70 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=117.81ms min=2.41ms med=71.09ms max=7.42s p(90)=229.73ms p(95)=343.53ms
-     iterations.............: 5128110 8538.515151/s
-     vus....................: 1007    min=1007      max=1007
-
-running (10m00.6s), 0000/1007 VUs, 5128110 complete and 0 interrupted iterations
-read ✓ [======================================] 1007 VUs  10m0s
-
-INFO[12:31:16] Load started at:               Tue Oct 29 2024 12:31:16 GMT+0000 (UTC)  source=console
-INFO[12:41:16] Load finished at:              Tue Oct 29 2024 12:41:16 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 42 GB   70 MB/s
-     aws_obj_get_duration...: avg=117.14ms min=6.7ms    med=70.63ms max=5.54s p(90)=226.2ms  p(95)=340.74ms
-     aws_obj_get_fails......: 24      0.039977/s
-     aws_obj_get_success....: 5153456 8584.127162/s
-     data_received..........: 42 GB   70 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=117.22ms min=237.02µs med=70.71ms max=5.54s p(90)=226.27ms p(95)=340.82ms
-     iterations.............: 5153480 8584.167139/s
-     vus....................: 1007    min=1007      max=1007
-
-running (10m00.3s), 0000/1007 VUs, 5153480 complete and 0 interrupted iterations
-read ✓ [======================================] 1007 VUs  10m0s
 
 ### 13 nodes 128kb write
 INFO[17:25:33] Load started at:               Tue Oct 01 2024 17:25:33 GMT+0000 (UTC)  source=console
@@ -1401,47 +1494,42 @@ INFO[10:59:21] Load finished at:              Fri Oct 04 2024 10:59:21 GMT+0000 
 running (10m02.4s), 000/620 VUs, 2516181 complete and 0 interrupted iterations
 read ✓ [======================================] 620 VUs  10m0s
 
-
 ### 8 nodes 128kb write
-INFO[18:40:55] Load started at: Fri Oct 25 2024 18:40:55 GMT+0000 (UTC) source=console  
-INFO[18:50:56] Load finished at: Fri Oct 25 2024 18:50:56 GMT+0000 (UTC) source=console  
-█ setup
+NFO[12:39:47] Load started at:               Fri Oct 04 2024 12:39:47 GMT+0000 (UTC)  source=console
+INFO[12:49:50] Load finished at:              Fri Oct 04 2024 12:49:50 GMT+0000 (UTC)  source=console
+     █ setup
 
-```
- █ teardown
+     █ teardown
 
- aws_obj_put_bytes......: 160 GB  266 MB/s
- aws_obj_put_duration...: avg=285.42ms min=37.34ms  med=211.87ms max=7.3s p(90)=441.74ms p(95)=578.33ms
- aws_obj_put_success....: 1221233 2030.952633/s
- data_received..........: 0 B     0 B/s
- data_sent..............: 160 GB  266 MB/s
- iteration_duration.....: avg=294.82ms min=353.96µs med=221.84ms max=7.3s p(90)=451.11ms p(95)=587.58ms
- iterations.............: 1221233 2030.952633/s
- vus....................: 40      min=40        max=600
-```
+     aws_obj_put_bytes......: 109 GB 181 MB/s
+     aws_obj_put_duration...: avg=422.6ms  min=33.1ms   med=214.87ms max=14.78s p(90)=758.63ms p(95)=1.41s
+     aws_obj_put_success....: 834047 1383.10943/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 109 GB 181 MB/s
+     iteration_duration.....: avg=432.05ms min=208.75ms med=224.47ms max=14.79s p(90)=768.08ms p(95)=1.42s
+     iterations.............: 834047 1383.10943/s
+     vus....................: 3      min=3        max=600
 
-running (10m01.3s), 000/600 VUs, 1221233 complete and 0 interrupted iterations  
-write ✓ [======================================] 600 VUs 10m0s
+running (10m03.0s), 000/600 VUs, 834047 complete and 0 interrupted iterations
+write ✓ [======================================] 600 VUs  10m0s
 
-INFO[18:40:55] Load started at: Fri Oct 25 2024 18:40:55 GMT+0000 (UTC) source=console  
-INFO[18:50:57] Load finished at: Fri Oct 25 2024 18:50:57 GMT+0000 (UTC) source=console  
-█ setup
+INFO[12:39:48] Load started at:               Fri Oct 04 2024 12:39:48 GMT+0000 (UTC)  source=console
+INFO[12:49:50] Load finished at:              Fri Oct 04 2024 12:49:50 GMT+0000 (UTC)  source=console
+     █ setup
 
-```
- █ teardown
+     █ teardown
 
- aws_obj_put_bytes......: 165 GB  274 MB/s
- aws_obj_put_duration...: avg=276.68ms min=32.85ms  med=203.94ms max=7.41s p(90)=430.39ms p(95)=598.22ms
- aws_obj_put_success....: 1258221 2090.230967/s
- data_received..........: 0 B     0 B/s
- data_sent..............: 165 GB  274 MB/s
- iteration_duration.....: avg=286.21ms min=295.75µs med=213.57ms max=7.43s p(90)=439.8ms  p(95)=607.9ms 
- iterations.............: 1258221 2090.230967/s
- vus....................: 19      min=19        max=600
-```
+     aws_obj_put_bytes......: 113 GB 188 MB/s
+     aws_obj_put_duration...: avg=407.64ms min=31.64ms med=204.07ms max=11.87s p(90)=742.14ms p(95)=1.37s
+     aws_obj_put_success....: 864065 1434.481434/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 113 GB 188 MB/s
+     iteration_duration.....: avg=416.99ms min=1.56ms  med=213.71ms max=11.88s p(90)=751.52ms p(95)=1.37s
+     iterations.............: 864065 1434.481434/s
+     vus....................: 94     min=94        max=600
 
-running (10m02.0s), 000/600 VUs, 1258221 complete and 0 interrupted iterations  
-write ✓ [======================================] 600 VUs 10m0s
+running (10m02.4s), 000/600 VUs, 864065 complete and 0 interrupted iterations
+write ✓ [======================================] 600 VUs  10m0s
 
 ### 8 nodes 128kb read
 INFO[13:21:32] Load started at:               Fri Oct 04 2024 13:21:32 GMT+0000 (UTC)  source=console
@@ -1482,43 +1570,83 @@ INFO[13:31:35] Load finished at:              Fri Oct 04 2024 13:31:35 GMT+0000 
 running (10m00.5s), 000/500 VUs, 2381619 complete and 0 interrupted iterations
 read ✓ [======================================] 500 VUs  10m0s
 
+### 8 nodes 1mb write
+INFO[06:58:50] Load started at:               Fri Oct 25 2024 06:58:50 GMT+0000 (UTC)  source=console
+INFO[07:08:52] Load finished at:              Fri Oct 25 2024 07:08:52 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 411 GB 683 MB/s
+     aws_obj_put_duration...: avg=596.32ms min=93.07ms  med=511.32ms max=3.55s p(90)=1.02s p(95)=1.22s
+     aws_obj_put_success....: 391585 651.49534/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 411 GB 683 MB/s
+     iteration_duration.....: avg=613.12ms min=420.66µs med=528.23ms max=3.56s p(90)=1.04s p(95)=1.23s
+     iterations.............: 391585 651.49534/s
+     vus....................: 9      min=9       max=400
+
+running (10m01.1s), 000/400 VUs, 391585 complete and 0 interrupted iterations
+write ✓ [======================================] 400 VUs  10m0s
+
+INFO[06:58:53] Load started at:               Fri Oct 25 2024 06:58:53 GMT+0000 (UTC)  source=console
+INFO[07:08:53] Load finished at:              Fri Oct 25 2024 07:08:53 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 396 GB 659 MB/s
+     aws_obj_put_duration...: avg=619.76ms min=81.12ms  med=539.59ms max=3.18s p(90)=1.05s p(95)=1.24s
+     aws_obj_put_success....: 377154 628.293522/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 395 GB 659 MB/s
+     iteration_duration.....: avg=636.45ms min=347.35µs med=556.36ms max=3.2s  p(90)=1.06s p(95)=1.26s
+     iterations.............: 377154 628.293522/s
+     vus....................: 400    min=400      max=400
+
+running (10m00.3s), 000/400 VUs, 377154 complete and 0 interrupted iterations
+write ✓ [======================================] 400 VUs  10m0s
 
 ### 8 nodes 1mb read
-INFO[14:55:43] Load started at:               Fri Oct 04 2024 14:55:43 GMT+0000 (UTC)  source=console
-INFO[15:05:44] Load finished at:              Fri Oct 04 2024 15:05:44 GMT+0000 (UTC)  source=console
+INFO[07:19:50] Load started at:               Fri Oct 25 2024 07:19:50 GMT+0000 (UTC)  source=console
+INFO[07:29:51] Load finished at:              Fri Oct 25 2024 07:29:51 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 863 GB 1.4 GB/s
-     aws_obj_get_duration...: avg=291.56ms min=20.3ms   med=238.12ms max=4.8s p(90)=502.4ms p(95)=612.38ms
-     aws_obj_get_success....: 823024 1370.221107/s
-     data_received..........: 863 GB 1.4 GB/s
+     aws_obj_get_bytes......: 921 GB 1.5 GB/s
+     aws_obj_get_duration...: avg=273.22ms min=23.05ms  med=230.88ms max=4.35s p(90)=476.53ms p(95)=586.2ms 
+     aws_obj_get_fails......: 20     0.033279/s
+     aws_obj_get_success....: 878271 1461.394981/s
+     data_received..........: 921 GB 1.5 GB/s
      data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=291.66ms min=274.83µs med=238.21ms max=4.8s p(90)=502.5ms p(95)=612.48ms
-     iterations.............: 823024 1370.221107/s
-     vus....................: 400    min=400       max=400
+     iteration_duration.....: avg=273.32ms min=654.96µs med=230.98ms max=4.35s p(90)=476.63ms p(95)=586.29ms
+     iterations.............: 878291 1461.42826/s
+     vus....................: 1      min=1         max=400
 
-running (10m00.7s), 000/400 VUs, 823024 complete and 0 interrupted iterations
+running (10m01.0s), 000/400 VUs, 878291 complete and 0 interrupted iterations
 read ✓ [======================================] 400 VUs  10m0s
 
-INFO[14:55:47] Load started at:               Fri Oct 04 2024 14:55:47 GMT+0000 (UTC)  source=console
-INFO[15:05:48] Load finished at:              Fri Oct 04 2024 15:05:48 GMT+0000 (UTC)  source=console
+
+INFO[07:19:51] Load started at:               Fri Oct 25 2024 07:19:51 GMT+0000 (UTC)  source=console
+INFO[07:29:52] Load finished at:              Fri Oct 25 2024 07:29:52 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 876 GB 1.5 GB/s
-     aws_obj_get_duration...: avg=287.37ms min=19.84ms  med=235.57ms max=5.1s p(90)=497.38ms p(95)=605.53ms
-     aws_obj_get_success....: 834923 1390.554448/s
-     data_received..........: 875 GB 1.5 GB/s
+     aws_obj_get_bytes......: 917 GB 1.5 GB/s
+     aws_obj_get_duration...: avg=274.31ms min=23.67ms med=232.33ms max=4.33s p(90)=478.43ms p(95)=589.23ms
+     aws_obj_get_fails......: 22     0.036627/s
+     aws_obj_get_success....: 874709 1456.258286/s
+     data_received..........: 917 GB 1.5 GB/s
      data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=287.47ms min=188.22µs med=235.67ms max=5.1s p(90)=497.48ms p(95)=605.64ms
-     iterations.............: 834923 1390.554448/s
+     iteration_duration.....: avg=274.41ms min=202.9µs med=232.42ms max=4.33s p(90)=478.52ms p(95)=589.33ms
+     iterations.............: 874731 1456.294912/s
      vus....................: 400    min=400       max=400
 
-running (10m00.4s), 000/400 VUs, 834923 complete and 0 interrupted iterations
+running (10m00.7s), 000/400 VUs, 874731 complete and 0 interrupted iterations
 read ✓ [======================================] 400 VUs  10m0s
+
 
 ### 8 nodes 128mb write
 INFO[15:46:48] Load started at:               Fri Oct 04 2024 15:46:48 GMT+0000 (UTC)  source=console
@@ -1595,115 +1723,156 @@ running (10m04.8s), 000/120 VUs, 9172 complete and 0 interrupted iterations
 read ✓ [======================================] 120 VUs  10m0s
 
 ### 6 nodes 8kb write
-INFO[16:51:40] Load started at:               Fri Oct 04 2024 16:51:40 GMT+0000 (UTC)  source=console
-INFO[17:01:41] Load finished at:              Fri Oct 04 2024 17:01:41 GMT+0000 (UTC)  source=console
+INFO[08:36:00] Load started at:               Fri Oct 25 2024 08:36:00 GMT+0000 (UTC)  source=console
+INFO[08:46:03] Load finished at:              Fri Oct 25 2024 08:46:03 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 5.4 GB 8.9 MB/s
-     aws_obj_put_duration...: avg=418.76ms min=39.17ms  med=249.93ms max=6.56s p(90)=837.43ms p(95)=1.14s
-     aws_obj_put_success....: 653365 1087.788684/s
+     aws_obj_put_bytes......: 3.0 GB 4.9 MB/s
+     aws_obj_put_duration...: avg=764.29ms min=33.16ms  med=432.99ms max=8.69s p(90)=1.91s p(95)=2.49s
+     aws_obj_put_success....: 361640 599.925411/s
      data_received..........: 0 B    0 B/s
-     data_sent..............: 5.3 GB 8.9 MB/s
-     iteration_duration.....: avg=427.2ms  min=231.17µs med=258.14ms max=6.56s p(90)=846.42ms p(95)=1.14s
-     iterations.............: 653365 1087.788684/s
-     vus....................: 465    min=465       max=465
+     data_sent..............: 3.0 GB 4.9 MB/s
+     iteration_duration.....: avg=773.03ms min=336.28µs med=441.72ms max=8.69s p(90)=1.92s p(95)=2.49s
+     iterations.............: 361640 599.925411/s
+     vus....................: 38     min=38       max=465
 
-running (10m00.6s), 000/465 VUs, 653365 complete and 0 interrupted iterations
+running (10m02.8s), 000/465 VUs, 361640 complete and 0 interrupted iterations
 write ✓ [======================================] 465 VUs  10m0s
 
-INFO[16:51:41] Load started at:               Fri Oct 04 2024 16:51:41 GMT+0000 (UTC)  source=console
-INFO[17:01:42] Load finished at:              Fri Oct 04 2024 17:01:42 GMT+0000 (UTC)  source=console
+INFO[08:36:04] Load started at:               Fri Oct 25 2024 08:36:04 GMT+0000 (UTC)  source=console
+INFO[08:46:05] Load finished at:              Fri Oct 25 2024 08:46:05 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 5.4 GB 8.9 MB/s
-     aws_obj_put_duration...: avg=417.06ms min=37.17ms  med=249.49ms max=6.94s p(90)=834.61ms p(95)=1.13s
-     aws_obj_put_success....: 655928 1091.935714/s
+     aws_obj_put_bytes......: 2.8 GB 4.7 MB/s
+     aws_obj_put_duration...: avg=797.79ms min=35.41ms  med=483.25ms max=8.64s p(90)=1.93s p(95)=2.49s
+     aws_obj_put_success....: 346177 575.999115/s
      data_received..........: 0 B    0 B/s
-     data_sent..............: 5.4 GB 8.9 MB/s
-     iteration_duration.....: avg=425.34ms min=248.13µs med=257.57ms max=6.96s p(90)=843.41ms p(95)=1.14s
-     iterations.............: 655928 1091.935714/s
-     vus....................: 465    min=465       max=465
+     data_sent..............: 2.8 GB 4.7 MB/s
+     iteration_duration.....: avg=806.32ms min=292.86µs med=491.99ms max=8.65s p(90)=1.94s p(95)=2.5s 
+     iterations.............: 346177 575.999115/s
+     vus....................: 1      min=1        max=465
 
-running (10m00.7s), 000/465 VUs, 655928 complete and 0 interrupted iterations
+running (10m01.0s), 000/465 VUs, 346177 complete and 0 interrupted iterations
 write ✓ [======================================] 465 VUs  10m0s
 
-### 6 nodes 128mb write
-INFO[18:19:58] Load started at:               Fri Oct 04 2024 18:19:58 GMT+0000 (UTC)  source=console
-INFO[18:30:03] Load finished at:              Fri Oct 04 2024 18:30:03 GMT+0000 (UTC)  source=console
+### 6 nodes 8kb read
+INFO[08:47:16] Load started at:               Fri Oct 25 2024 08:47:16 GMT+0000 (UTC)  source=console
+INFO[08:57:18] Load finished at:              Fri Oct 25 2024 08:57:18 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 436 GB 721 MB/s
-     aws_obj_put_duration...: avg=16.06s min=6.51s    med=15.48s max=31.88s p(90)=22.29s p(95)=24.12s
-     aws_obj_put_success....: 3251   5.369735/s
-     data_received..........: 0 B    0 B/s
-     data_sent..............: 436 GB 721 MB/s
-     iteration_duration.....: avg=16.48s min=166.72µs med=15.91s max=32.33s p(90)=22.7s  p(95)=24.54s
-     iterations.............: 3251   5.369735/s
-     vus....................: 72     min=0      max=90
+     aws_obj_get_bytes......: 17 GB   29 MB/s
+     aws_obj_get_duration...: avg=131.83ms min=6.19ms   med=114.42ms max=1.1s p(90)=241.82ms p(95)=287.4ms 
+     aws_obj_get_fails......: 7543    12.569847/s
+     aws_obj_get_success....: 2110588 3517.137628/s
+     data_received..........: 17 GB   29 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=131.7ms  min=245.04µs med=114.29ms max=1.1s p(90)=241.71ms p(95)=287.29ms
+     iterations.............: 2118131 3529.707476/s
+     vus....................: 465     min=465       max=465
 
-running (10m05.4s), 00/90 VUs, 3251 complete and 72 interrupted iterations
-write ✓ [======================================] 90 VUs  10m0s
+running (10m00.1s), 000/465 VUs, 2118131 complete and 0 interrupted iterations
+read ✓ [======================================] 465 VUs  10m0s
 
-INFO[18:19:57] Load started at:               Fri Oct 04 2024 18:19:57 GMT+0000 (UTC)  source=console
-INFO[18:30:02] Load finished at:              Fri Oct 04 2024 18:30:02 GMT+0000 (UTC)  source=console
+INFO[08:47:16] Load started at:               Fri Oct 25 2024 08:47:16 GMT+0000 (UTC)  source=console
+INFO[08:57:18] Load finished at:              Fri Oct 25 2024 08:57:18 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 454 GB 749 MB/s
-     aws_obj_put_duration...: avg=15.46s min=5.58s    med=15.17s max=31.23s p(90)=20.77s p(95)=22.53s
-     aws_obj_put_success....: 3382   5.582634/s
-     data_received..........: 0 B    0 B/s
-     data_sent..............: 454 GB 749 MB/s
-     iteration_duration.....: avg=15.88s min=177.05µs med=15.6s  max=31.67s p(90)=21.19s p(95)=22.99s
-     iterations.............: 3379   5.577682/s
-     vus....................: 60     min=0      max=90
+     aws_obj_get_bytes......: 17 GB   29 MB/s
+     aws_obj_get_duration...: avg=133.45ms min=6.43ms   med=115.91ms max=1.26s p(90)=244.83ms p(95)=290.55ms
+     aws_obj_get_fails......: 7716    12.852978/s
+     aws_obj_get_success....: 2084889 3472.917726/s
+     data_received..........: 17 GB   28 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=133.32ms min=188.58µs med=115.76ms max=1.26s p(90)=244.7ms  p(95)=290.43ms
+     iterations.............: 2092605 3485.770704/s
+     vus....................: 465     min=465       max=465
 
-running (10m05.8s), 00/90 VUs, 3379 complete and 60 interrupted iterations
-write ✓ [======================================] 90 VUs  10m0s
+running (10m00.3s), 000/465 VUs, 2092605 complete and 0 interrupted iterations
+read ✓ [======================================] 465 VUs  10m0s
 
-### 6 nodes 128mb read
-INFO[18:37:10] Load started at:               Fri Oct 04 2024 18:37:10 GMT+0000 (UTC)  source=console
-INFO[18:47:15] Load finished at:              Fri Oct 04 2024 18:47:15 GMT+0000 (UTC)  source=console
+### 6 nodes 128kb write
+INFO[12:56:59] Load started at:               Sun Oct 06 2024 12:56:59 GMT+0000 (UTC)  source=console
+INFO[13:06:59] Load finished at:              Sun Oct 06 2024 13:06:59 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 893 GB 1.5 GB/s
-     aws_obj_get_duration...: avg=8.14s min=1.55s    med=7.9s max=16.47s p(90)=10.39s p(95)=11.34s
-     aws_obj_get_success....: 6655   11.000834/s
-     data_received..........: 893 GB 1.5 GB/s
-     data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=8.14s min=369.66µs med=7.9s max=16.47s p(90)=10.39s p(95)=11.34s
-     iterations.............: 6655   11.000834/s
-     vus....................: 9      min=9       max=90
+     aws_obj_put_bytes......: 147 GB  245 MB/s
+     aws_obj_put_duration...: avg=230.74ms min=24.72ms  med=165.41ms max=3.79s p(90)=448.07ms p(95)=584.84ms
+     aws_obj_put_success....: 1122992 1870.989196/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 147 GB  245 MB/s
+     iteration_duration.....: avg=240.42ms min=269.01µs med=174.82ms max=3.81s p(90)=457.68ms p(95)=594.61ms
+     iterations.............: 1122992 1870.989196/s
+     vus....................: 450     min=450       max=450
 
-running (10m05.0s), 00/90 VUs, 6655 complete and 0 interrupted iterations
-read ✓ [======================================] 90 VUs  10m0s
+running (10m00.2s), 000/450 VUs, 1122992 complete and 0 interrupted iterations
+write ✓ [======================================] 450 VUs  10m0s
 
-INFO[18:37:09] Load started at:               Fri Oct 04 2024 18:37:09 GMT+0000 (UTC)  source=console
-INFO[18:47:15] Load finished at:              Fri Oct 04 2024 18:47:15 GMT+0000 (UTC)  source=console
+INFO[12:56:58] Load started at:               Sun Oct 06 2024 12:56:58 GMT+0000 (UTC)  source=console
+INFO[13:06:59] Load finished at:              Sun Oct 06 2024 13:06:59 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 907 GB 1.5 GB/s
-     aws_obj_get_duration...: avg=8.02s min=2.81s    med=7.79s max=16.62s p(90)=10.42s p(95)=11.4s
-     aws_obj_get_success....: 6761   11.158189/s
-     data_received..........: 908 GB 1.5 GB/s
-     data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=8.02s min=467.22µs med=7.79s max=16.62s p(90)=10.42s p(95)=11.4s
-     iterations.............: 6761   11.158189/s
-     vus....................: 7      min=7       max=90
+     aws_obj_put_bytes......: 151 GB  251 MB/s
+     aws_obj_put_duration...: avg=224.89ms min=27.51ms  med=160.4ms  max=3.88s p(90)=438.8ms  p(95)=572.53ms
+     aws_obj_put_success....: 1151656 1917.087312/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 151 GB  251 MB/s
+     iteration_duration.....: avg=234.52ms min=197.21µs med=170.07ms max=3.88s p(90)=448.38ms p(95)=582.4ms 
+     iterations.............: 1151656 1917.087312/s
+     vus....................: 450     min=450       max=450
 
-running (10m05.9s), 00/90 VUs, 6761 complete and 5 interrupted iterations
-read ✓ [======================================] 90 VUs  10m0s
+running (10m00.7s), 000/450 VUs, 1151656 complete and 0 interrupted iterations
+write ✓ [======================================] 450 VUs  10m0s
+
+### 6 nodes 128kb read
+INFO[13:08:35] Load started at:               Sun Oct 06 2024 13:08:35 GMT+0000 (UTC)  source=console
+INFO[13:18:36] Load finished at:              Sun Oct 06 2024 13:18:36 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 236 GB  394 MB/s
+     aws_obj_get_duration...: avg=149.63ms min=7.37ms   med=105.75ms max=3.3s p(90)=283.54ms p(95)=396.99ms
+     aws_obj_get_fails......: 4       0.006659/s
+     aws_obj_get_success....: 1803254 3002.155809/s
+     data_received..........: 236 GB  393 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=149.72ms min=221.21µs med=105.84ms max=3.3s p(90)=283.63ms p(95)=397.08ms
+     iterations.............: 1803258 3002.162468/s
+     vus....................: 450     min=450       max=450
+
+running (10m00.7s), 000/450 VUs, 1803258 complete and 0 interrupted iterations
+read ✓ [======================================] 450 VUs  10m0s
+
+INFO[13:08:36] Load started at:               Sun Oct 06 2024 13:08:36 GMT+0000 (UTC)  source=console
+INFO[13:18:37] Load finished at:              Sun Oct 06 2024 13:18:37 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 244 GB  407 MB/s
+     aws_obj_get_duration...: avg=144.79ms min=7.53ms   med=103.3ms  max=3.14s p(90)=274.31ms p(95)=383.18ms
+     aws_obj_get_fails......: 2       0.00333/s
+     aws_obj_get_success....: 1863717 3102.91808/s
+     data_received..........: 244 GB  407 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=144.88ms min=201.17µs med=103.38ms max=3.14s p(90)=274.4ms  p(95)=383.27ms
+     iterations.............: 1863719 3102.921409/s
+     vus....................: 450     min=450       max=450
+
+running (10m00.6s), 000/450 VUs, 1863719 complete and 0 interrupted iterations
+read ✓ [======================================] 450 VUs  10m0s
 
 ### 6 nodes 1mb write
 NFO[19:18:04] Load started at:               Fri Oct 04 2024 19:18:04 GMT+0000 (UTC)  source=console
@@ -1779,161 +1948,79 @@ INFO[19:50:03] Load finished at:              Fri Oct 04 2024 19:50:03 GMT+0000 
 running (10m00.7s), 000/300 VUs, 642467 complete and 0 interrupted iterations
 read ✓ [======================================] 300 VUs  10m0s
 
-### 6 nodes 128kb write
-INFO[12:56:59] Load started at:               Sun Oct 06 2024 12:56:59 GMT+0000 (UTC)  source=console
-INFO[13:06:59] Load finished at:              Sun Oct 06 2024 13:06:59 GMT+0000 (UTC)  source=console
+### 6 nodes 128mb write
+INFO[18:19:58] Load started at:               Fri Oct 04 2024 18:19:58 GMT+0000 (UTC)  source=console
+INFO[18:30:03] Load finished at:              Fri Oct 04 2024 18:30:03 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 147 GB  245 MB/s
-     aws_obj_put_duration...: avg=230.74ms min=24.72ms  med=165.41ms max=3.79s p(90)=448.07ms p(95)=584.84ms
-     aws_obj_put_success....: 1122992 1870.989196/s
-     data_received..........: 0 B     0 B/s
-     data_sent..............: 147 GB  245 MB/s
-     iteration_duration.....: avg=240.42ms min=269.01µs med=174.82ms max=3.81s p(90)=457.68ms p(95)=594.61ms
-     iterations.............: 1122992 1870.989196/s
-     vus....................: 450     min=450       max=450
-
-running (10m00.2s), 000/450 VUs, 1122992 complete and 0 interrupted iterations
-write ✓ [======================================] 450 VUs  10m0s
-
-INFO[12:56:58] Load started at:               Sun Oct 06 2024 12:56:58 GMT+0000 (UTC)  source=console
-INFO[13:06:59] Load finished at:              Sun Oct 06 2024 13:06:59 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_put_bytes......: 151 GB  251 MB/s
-     aws_obj_put_duration...: avg=224.89ms min=27.51ms  med=160.4ms  max=3.88s p(90)=438.8ms  p(95)=572.53ms
-     aws_obj_put_success....: 1151656 1917.087312/s
-     data_received..........: 0 B     0 B/s
-     data_sent..............: 151 GB  251 MB/s
-     iteration_duration.....: avg=234.52ms min=197.21µs med=170.07ms max=3.88s p(90)=448.38ms p(95)=582.4ms 
-     iterations.............: 1151656 1917.087312/s
-     vus....................: 450     min=450       max=450
-
-running (10m00.7s), 000/450 VUs, 1151656 complete and 0 interrupted iterations
-write ✓ [======================================] 450 VUs  10m0s
-
-### 6 nodes 128kb read
-INFO[13:08:35] Load started at:               Sun Oct 06 2024 13:08:35 GMT+0000 (UTC)  source=console
-ERRO[13:10:15] operation error S3: GetObject, https response error StatusCode: 404, RequestID: ab2f0f02-08f3-4ff5-8b71-d1623f40d0f5, HostID: 48580aef-a898-49bd-b304-5dd1d1cf1e09, NoSuchKey:   bucket=7ee6f6df-7904-4c89-9406-7861e9b1f1c4 endpoint="https://data1.blackmetal-node4.blackmetal.object.set.yadro.com:443" key=71a83b18-98f3-4c04-a3eb-99b8220a1f07
-ERRO[13:12:41] operation error S3: GetObject, https response error StatusCode: 404, RequestID: 14ccd062-bfc0-4de2-bc8d-4d7e4806f7dc, HostID: bf3573b6-6f8e-4a5c-b37b-5a057075d08b, NoSuchKey:   bucket=d37da7ec-62b3-4a26-8510-2a897ff93759 endpoint="https://data1.blackmetal-node5.blackmetal.object.set.yadro.com:443" key=9138a84c-4c13-4be6-ac83-425a0fc5d6aa
-ERRO[13:12:41] operation error S3: GetObject, https response error StatusCode: 404, RequestID: 151706b4-1564-47e9-8147-2211e78ec3e2, HostID: bf3573b6-6f8e-4a5c-b37b-5a057075d08b, NoSuchKey:   bucket=d37da7ec-62b3-4a26-8510-2a897ff93759 endpoint="https://data1.blackmetal-node5.blackmetal.object.set.yadro.com:443" key=6a60c52f-e9a6-4e78-9323-385c4803d333
-ERRO[13:12:49] operation error S3: GetObject, https response error StatusCode: 404, RequestID: 7708a616-4b3b-4890-a10b-2c37683034d4, HostID: d65a6a1e-de31-4f4a-a3d3-4b5e82c50c05, NoSuchKey:   bucket=94dd0fa0-11d9-4ecc-a082-f74e3269c4de endpoint="https://data1.blackmetal-node3.blackmetal.object.set.yadro.com:443" key=70047f5d-0a51-4666-bb3c-2d928ff27b2d
-INFO[13:18:36] Load finished at:              Sun Oct 06 2024 13:18:36 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 236 GB  394 MB/s
-     aws_obj_get_duration...: avg=149.63ms min=7.37ms   med=105.75ms max=3.3s p(90)=283.54ms p(95)=396.99ms
-     aws_obj_get_fails......: 4       0.006659/s
-     aws_obj_get_success....: 1803254 3002.155809/s
-     data_received..........: 236 GB  393 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=149.72ms min=221.21µs med=105.84ms max=3.3s p(90)=283.63ms p(95)=397.08ms
-     iterations.............: 1803258 3002.162468/s
-     vus....................: 450     min=450       max=450
-
-running (10m00.7s), 000/450 VUs, 1803258 complete and 0 interrupted iterations
-read ✓ [======================================] 450 VUs  10m0s
-
-INFO[13:08:36] Load started at:               Sun Oct 06 2024 13:08:36 GMT+0000 (UTC)  source=console
-ERRO[13:12:06] operation error S3: GetObject, https response error StatusCode: 404, RequestID: 952921e6-bc85-44ef-897a-6aa250b05423, HostID: 48580aef-a898-49bd-b304-5dd1d1cf1e09, NoSuchKey:   bucket=78ac46de-e176-4c45-8ba1-2ecf488decb9 endpoint="https://data0.blackmetal-node4.blackmetal.object.set.yadro.com:443" key=ff560f93-82f8-4fe5-9cc5-8e6451916817
-ERRO[13:12:42] operation error S3: GetObject, https response error StatusCode: 404, RequestID: 653c1f76-98e4-4273-a6b8-96fe0f1eaca7, HostID: db29f456-9156-48e1-81a5-fc990aaefd89, NoSuchKey:   bucket=152232b0-9107-4387-8c35-0b5b4a581ae0 endpoint="https://data0.blackmetal-node2.blackmetal.object.set.yadro.com:443" key=e810bc6f-b2c6-4243-acdd-270cd0d07175
-INFO[13:18:37] Load finished at:              Sun Oct 06 2024 13:18:37 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 244 GB  407 MB/s
-     aws_obj_get_duration...: avg=144.79ms min=7.53ms   med=103.3ms  max=3.14s p(90)=274.31ms p(95)=383.18ms
-     aws_obj_get_fails......: 2       0.00333/s
-     aws_obj_get_success....: 1863717 3102.91808/s
-     data_received..........: 244 GB  407 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=144.88ms min=201.17µs med=103.38ms max=3.14s p(90)=274.4ms  p(95)=383.27ms
-     iterations.............: 1863719 3102.921409/s
-     vus....................: 450     min=450       max=450
-
-running (10m00.6s), 000/450 VUs, 1863719 complete and 0 interrupted iterations
-read ✓ [======================================] 450 VUs  10m0s
-
-### 4 nodes 128kb write
-INFO[18:57:34] Load started at:               Sun Oct 06 2024 18:57:34 GMT+0000 (UTC)  source=console
-INFO[19:07:34] Load finished at:              Sun Oct 06 2024 19:07:34 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_put_bytes......: 94 GB  157 MB/s
-     aws_obj_put_duration...: avg=240.69ms min=29.34ms  med=167.47ms max=4.35s p(90)=483.78ms p(95)=635.96ms
-     aws_obj_put_success....: 718743 1197.27101/s
+     aws_obj_put_bytes......: 436 GB 721 MB/s
+     aws_obj_put_duration...: avg=16.06s min=6.51s    med=15.48s max=31.88s p(90)=22.29s p(95)=24.12s
+     aws_obj_put_success....: 3251   5.369735/s
      data_received..........: 0 B    0 B/s
-     data_sent..............: 94 GB  157 MB/s
-     iteration_duration.....: avg=250.44ms min=211.61µs med=177.18ms max=4.36s p(90)=493.56ms p(95)=646.01ms
-     iterations.............: 718743 1197.27101/s
-     vus....................: 300    min=300      max=300
+     data_sent..............: 436 GB 721 MB/s
+     iteration_duration.....: avg=16.48s min=166.72µs med=15.91s max=32.33s p(90)=22.7s  p(95)=24.54s
+     iterations.............: 3251   5.369735/s
+     vus....................: 72     min=0      max=90
 
-running (10m00.3s), 000/300 VUs, 718743 complete and 0 interrupted iterations
-write ✓ [======================================] 300 VUs  10m0s
+running (10m05.4s), 00/90 VUs, 3251 complete and 72 interrupted iterations
+write ✓ [======================================] 90 VUs  10m0s
 
-INFO[18:57:33] Load started at:               Sun Oct 06 2024 18:57:33 GMT+0000 (UTC)  source=console
-INFO[19:07:34] Load finished at:              Sun Oct 06 2024 19:07:34 GMT+0000 (UTC)  source=console
+INFO[18:19:57] Load started at:               Fri Oct 04 2024 18:19:57 GMT+0000 (UTC)  source=console
+INFO[18:30:02] Load finished at:              Fri Oct 04 2024 18:30:02 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_put_bytes......: 96 GB  160 MB/s
-     aws_obj_put_duration...: avg=236.1ms  min=26.02ms  med=163.28ms max=4.89s p(90)=476.01ms p(95)=624ms   
-     aws_obj_put_success....: 732503 1218.72713/s
+     aws_obj_put_bytes......: 454 GB 749 MB/s
+     aws_obj_put_duration...: avg=15.46s min=5.58s    med=15.17s max=31.23s p(90)=20.77s p(95)=22.53s
+     aws_obj_put_success....: 3382   5.582634/s
      data_received..........: 0 B    0 B/s
-     data_sent..............: 96 GB  160 MB/s
-     iteration_duration.....: avg=245.81ms min=351.12µs med=173.07ms max=4.89s p(90)=485.85ms p(95)=634.42ms
-     iterations.............: 732503 1218.72713/s
-     vus....................: 9      min=9        max=300
+     data_sent..............: 454 GB 749 MB/s
+     iteration_duration.....: avg=15.88s min=177.05µs med=15.6s  max=31.67s p(90)=21.19s p(95)=22.99s
+     iterations.............: 3379   5.577682/s
+     vus....................: 60     min=0      max=90
 
-running (10m01.0s), 000/300 VUs, 732503 complete and 0 interrupted iterations
-write ✓ [======================================] 300 VUs  10m0s
+running (10m05.8s), 00/90 VUs, 3379 complete and 60 interrupted iterations
+write ✓ [======================================] 90 VUs  10m0s
 
-### 4 nodes 128kb read
-INFO[19:18:33] Load started at:               Sun Oct 06 2024 19:18:33 GMT+0000 (UTC)  source=console
-INFO[19:28:33] Load finished at:              Sun Oct 06 2024 19:28:33 GMT+0000 (UTC)  source=console
+### 6 nodes 128mb read
+INFO[18:37:10] Load started at:               Fri Oct 04 2024 18:37:10 GMT+0000 (UTC)  source=console
+INFO[18:47:15] Load finished at:              Fri Oct 04 2024 18:47:15 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 160 GB  267 MB/s
-     aws_obj_get_duration...: avg=147.16ms min=7.63ms   med=100.94ms max=5.14s p(90)=273.07ms p(95)=392.53ms
-     aws_obj_get_success....: 1222298 2035.61426/s
-     data_received..........: 160 GB  267 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=147.25ms min=207.18µs med=101.04ms max=5.14s p(90)=273.16ms p(95)=392.62ms
-     iterations.............: 1222298 2035.61426/s
-     vus....................: 300     min=300      max=300
+     aws_obj_get_bytes......: 893 GB 1.5 GB/s
+     aws_obj_get_duration...: avg=8.14s min=1.55s    med=7.9s max=16.47s p(90)=10.39s p(95)=11.34s
+     aws_obj_get_success....: 6655   11.000834/s
+     data_received..........: 893 GB 1.5 GB/s
+     data_sent..............: 0 B    0 B/s
+     iteration_duration.....: avg=8.14s min=369.66µs med=7.9s max=16.47s p(90)=10.39s p(95)=11.34s
+     iterations.............: 6655   11.000834/s
+     vus....................: 9      min=9       max=90
 
-running (10m00.5s), 000/300 VUs, 1222298 complete and 0 interrupted iterations
-read ✓ [======================================] 300 VUs  10m0s
+running (10m05.0s), 00/90 VUs, 6655 complete and 0 interrupted iterations
+read ✓ [======================================] 90 VUs  10m0s
 
-INFO[19:18:32] Load started at:               Sun Oct 06 2024 19:18:32 GMT+0000 (UTC)  source=console
-INFO[19:28:32] Load finished at:              Sun Oct 06 2024 19:28:32 GMT+0000 (UTC)  source=console
+INFO[18:37:09] Load started at:               Fri Oct 04 2024 18:37:09 GMT+0000 (UTC)  source=console
+INFO[18:47:15] Load finished at:              Fri Oct 04 2024 18:47:15 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 164 GB  273 MB/s
-     aws_obj_get_duration...: avg=144ms    min=7.1ms    med=99.27ms max=4.94s p(90)=267.92ms p(95)=382.24ms
-     aws_obj_get_success....: 1249410 2081.039661/s
-     data_received..........: 164 GB  273 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=144.09ms min=165.07µs med=99.35ms max=4.94s p(90)=268.01ms p(95)=382.33ms
-     iterations.............: 1249410 2081.039661/s
-     vus....................: 300     min=300       max=300
+     aws_obj_get_bytes......: 907 GB 1.5 GB/s
+     aws_obj_get_duration...: avg=8.02s min=2.81s    med=7.79s max=16.62s p(90)=10.42s p(95)=11.4s
+     aws_obj_get_success....: 6761   11.158189/s
+     data_received..........: 908 GB 1.5 GB/s
+     data_sent..............: 0 B    0 B/s
+     iteration_duration.....: avg=8.02s min=467.22µs med=7.79s max=16.62s p(90)=10.42s p(95)=11.4s
+     iterations.............: 6761   11.158189/s
+     vus....................: 7      min=7       max=90
 
-running (10m00.4s), 000/300 VUs, 1249410 complete and 0 interrupted iterations
-read ✓ [======================================] 300 VUs  10m0s
+running (10m05.9s), 00/90 VUs, 6761 complete and 5 interrupted iterations
+read ✓ [======================================] 90 VUs  10m0s
 
 ### 4 nodes 8kb write
 INFO[19:46:34] Load started at:               Sun Oct 06 2024 19:46:34 GMT+0000 (UTC)  source=console
@@ -2009,12 +2096,156 @@ INFO[20:07:56] Load finished at:              Sun Oct 06 2024 20:07:56 GMT+0000 
 running (10m00.8s), 000/310 VUs, 1267146 complete and 0 interrupted iterations
 read ✓ [======================================] 310 VUs  10m0s
 
+### 4 nodes 128kb write
+INFO[18:57:34] Load started at:               Sun Oct 06 2024 18:57:34 GMT+0000 (UTC)  source=console
+INFO[19:07:34] Load finished at:              Sun Oct 06 2024 19:07:34 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 94 GB  157 MB/s
+     aws_obj_put_duration...: avg=240.69ms min=29.34ms  med=167.47ms max=4.35s p(90)=483.78ms p(95)=635.96ms
+     aws_obj_put_success....: 718743 1197.27101/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 94 GB  157 MB/s
+     iteration_duration.....: avg=250.44ms min=211.61µs med=177.18ms max=4.36s p(90)=493.56ms p(95)=646.01ms
+     iterations.............: 718743 1197.27101/s
+     vus....................: 300    min=300      max=300
+
+running (10m00.3s), 000/300 VUs, 718743 complete and 0 interrupted iterations
+write ✓ [======================================] 300 VUs  10m0s
+
+INFO[18:57:33] Load started at:               Sun Oct 06 2024 18:57:33 GMT+0000 (UTC)  source=console
+INFO[19:07:34] Load finished at:              Sun Oct 06 2024 19:07:34 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 96 GB  160 MB/s
+     aws_obj_put_duration...: avg=236.1ms  min=26.02ms  med=163.28ms max=4.89s p(90)=476.01ms p(95)=624ms   
+     aws_obj_put_success....: 732503 1218.72713/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 96 GB  160 MB/s
+     iteration_duration.....: avg=245.81ms min=351.12µs med=173.07ms max=4.89s p(90)=485.85ms p(95)=634.42ms
+     iterations.............: 732503 1218.72713/s
+     vus....................: 9      min=9        max=300
+
+running (10m01.0s), 000/300 VUs, 732503 complete and 0 interrupted iterations
+write ✓ [======================================] 300 VUs  10m0s
+
+### 4 nodes 128kb read
+INFO[19:18:33] Load started at:               Sun Oct 06 2024 19:18:33 GMT+0000 (UTC)  source=console
+INFO[19:28:33] Load finished at:              Sun Oct 06 2024 19:28:33 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 160 GB  267 MB/s
+     aws_obj_get_duration...: avg=147.16ms min=7.63ms   med=100.94ms max=5.14s p(90)=273.07ms p(95)=392.53ms
+     aws_obj_get_success....: 1222298 2035.61426/s
+     data_received..........: 160 GB  267 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=147.25ms min=207.18µs med=101.04ms max=5.14s p(90)=273.16ms p(95)=392.62ms
+     iterations.............: 1222298 2035.61426/s
+     vus....................: 300     min=300      max=300
+
+running (10m00.5s), 000/300 VUs, 1222298 complete and 0 interrupted iterations
+read ✓ [======================================] 300 VUs  10m0s
+
+INFO[19:18:32] Load started at:               Sun Oct 06 2024 19:18:32 GMT+0000 (UTC)  source=console
+INFO[19:28:32] Load finished at:              Sun Oct 06 2024 19:28:32 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 164 GB  273 MB/s
+     aws_obj_get_duration...: avg=144ms    min=7.1ms    med=99.27ms max=4.94s p(90)=267.92ms p(95)=382.24ms
+     aws_obj_get_success....: 1249410 2081.039661/s
+     data_received..........: 164 GB  273 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=144.09ms min=165.07µs med=99.35ms max=4.94s p(90)=268.01ms p(95)=382.33ms
+     iterations.............: 1249410 2081.039661/s
+     vus....................: 300     min=300       max=300
+
+running (10m00.4s), 000/300 VUs, 1249410 complete and 0 interrupted iterations
+read ✓ [======================================] 300 VUs  10m0s
+
+### 4 nodes 1mb write
+INFO[21:06:30] Load started at:               Sun Oct 06 2024 21:06:30 GMT+0000 (UTC)  source=console
+INFO[21:16:32] Load finished at:              Sun Oct 06 2024 21:16:32 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 195 GB 323 MB/s
+     aws_obj_put_duration...: avg=629.38ms min=64.32ms  med=521.35ms max=5.36s p(90)=1.08s p(95)=1.39s
+     aws_obj_put_success....: 185567 307.947157/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 194 GB 323 MB/s
+     iteration_duration.....: avg=647.23ms min=308.99µs med=539.01ms max=5.38s p(90)=1.1s  p(95)=1.4s 
+     iterations.............: 185567 307.947157/s
+     vus....................: 19     min=19       max=200
+
+running (10m02.6s), 000/200 VUs, 185567 complete and 0 interrupted iterations
+write ✓ [======================================] 200 VUs  10m0s
+
+INFO[21:06:31] Load started at:               Sun Oct 06 2024 21:06:31 GMT+0000 (UTC)  source=console
+INFO[21:16:33] Load finished at:              Sun Oct 06 2024 21:16:33 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 192 GB 320 MB/s
+     aws_obj_put_duration...: avg=636.9ms min=61.22ms  med=529.61ms max=5.47s p(90)=1.09s p(95)=1.39s
+     aws_obj_put_success....: 183501 304.718803/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 192 GB 319 MB/s
+     iteration_duration.....: avg=654.9ms min=257.41µs med=547.54ms max=5.49s p(90)=1.11s p(95)=1.41s
+     iterations.............: 183501 304.718803/s
+     vus....................: 16     min=16       max=200
+
+running (10m02.2s), 000/200 VUs, 183501 complete and 0 interrupted iterations
+write ✓ [======================================] 200 VUs  10m0s
+
+### 4 nodes 1mb read
+INFO[21:25:12] Load started at:               Sun Oct 06 2024 21:25:12 GMT+0000 (UTC)  source=console
+INFO[21:35:13] Load finished at:              Sun Oct 06 2024 21:35:13 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 409 GB 680 MB/s
+     aws_obj_get_duration...: avg=307.89ms min=23.38ms  med=266.79ms max=5.19s p(90)=516.45ms p(95)=611.07ms
+     aws_obj_get_success....: 389648 648.635301/s
+     data_received..........: 409 GB 680 MB/s
+     data_sent..............: 0 B    0 B/s
+     iteration_duration.....: avg=307.99ms min=176.22µs med=266.89ms max=5.19s p(90)=516.54ms p(95)=611.19ms
+     iterations.............: 389648 648.635301/s
+     vus....................: 200    min=200      max=200
+
+running (10m00.7s), 000/200 VUs, 389648 complete and 0 interrupted iterations
+read ✓ [======================================] 200 VUs  10m0s
+
+INFO[21:25:12] Load started at:               Sun Oct 06 2024 21:25:12 GMT+0000 (UTC)  source=console
+INFO[21:35:13] Load finished at:              Sun Oct 06 2024 21:35:13 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 419 GB 697 MB/s
+     aws_obj_get_duration...: avg=300.49ms min=25.54ms  med=259.99ms max=4.93s p(90)=505.66ms p(95)=599.94ms
+     aws_obj_get_success....: 399317 664.302562/s
+     data_received..........: 419 GB 697 MB/s
+     data_sent..............: 0 B    0 B/s
+     iteration_duration.....: avg=300.59ms min=222.76µs med=260.09ms max=4.93s p(90)=505.76ms p(95)=600.06ms
+     iterations.............: 399317 664.302562/s
+     vus....................: 1      min=1        max=200
+
+running (10m01.1s), 000/200 VUs, 399317 complete and 0 interrupted iterations
+read ✓ [======================================] 200 VUs  10m0s
+
 ### 4 nodes 128mb write
 INFO[20:31:28] Load started at:               Sun Oct 06 2024 20:31:28 GMT+0000 (UTC)  source=console
-ERRO[20:41:33] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=cf91ae73-2448-4b45-b9cf-84e625e241c3 endpoint="https://data0.blackmetal-node2.blackmetal.object.set.yadro.com:443" key=75469468-cec7-4b55-9084-b166f1de2f88
-ERRO[20:41:33] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=0725e990-2d0b-47a4-9c20-7f97aaa09701 endpoint="https://data0.blackmetal-node4.blackmetal.object.set.yadro.com:443" key=ec0bce2d-5afc-46d0-a1df-a2eafe3273ed
-ERRO[20:41:33] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=4d8a892c-eca5-475d-a398-c8a8ae886c2d endpoint="https://data1.blackmetal-node2.blackmetal.object.set.yadro.com:443" key=8ed505ad-c1eb-487d-baad-1910a214bdbc
-ERRO[20:41:33] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=c8ee0e0d-2abe-484e-9fc6-a36fb2aa9386 endpoint="https://data0.blackmetal-node2.blackmetal.object.set.yadro.com:443" key=8f508838-84fd-43be-848d-b988bd330d31
 INFO[20:41:33] Load finished at:              Sun Oct 06 2024 20:41:33 GMT+0000 (UTC)  source=console
      █ setup
 
@@ -2033,10 +2264,6 @@ running (10m05.6s), 00/60 VUs, 2492 complete and 32 interrupted iterations
 write ✓ [======================================] 60 VUs  10m0s
 
 INFO[20:31:27] Load started at:               Sun Oct 06 2024 20:31:27 GMT+0000 (UTC)  source=console
-ERRO[20:41:32] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=a287be30-07ca-4ac7-a5fd-76e8ab4db7f7 endpoint="https://data0.blackmetal-node4.blackmetal.object.set.yadro.com:443" key=058fc3d4-5cd9-419a-a235-bf82b58356a6
-ERRO[20:41:32] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=b5c7276c-2b1c-4181-a923-7401c945c1f1 endpoint="https://data1.blackmetal-node2.blackmetal.object.set.yadro.com:443" key=a7fb9ec1-55b8-4f57-a587-3c3757935d8a
-ERRO[20:41:32] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=ef096b07-1eb9-42ec-ade8-92515de1a4ca endpoint="https://data1.blackmetal-node2.blackmetal.object.set.yadro.com:443" key=7993ea8c-9fa8-4a61-8fd0-1e6683de2bbb
-ERRO[20:41:32] operation error S3: PutObject, https response error StatusCode: 0, RequestID: , HostID: , canceled, context deadline exceeded  bucket=ab3c12b7-a2b4-4ac7-acbb-341921679637 endpoint="https://data0.blackmetal-node3.blackmetal.object.set.yadro.com:443" key=0220fc1b-5170-47bb-93cf-04e3af2e9e18
 INFO[20:41:32] Load finished at:              Sun Oct 06 2024 20:41:32 GMT+0000 (UTC)  source=console
      █ setup
 
@@ -2091,77 +2318,3 @@ INFO[20:52:53] Load finished at:              Sun Oct 06 2024 20:52:53 GMT+0000 
 running (10m05.0s), 00/60 VUs, 4037 complete and 0 interrupted iterations
 read ✓ [======================================] 60 VUs  10m0s
 
-### 4 nodes 1mb write
-INFO[21:06:30] Load started at:               Sun Oct 06 2024 21:06:30 GMT+0000 (UTC)  source=console
-INFO[21:16:32] Load finished at:              Sun Oct 06 2024 21:16:32 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_put_bytes......: 195 GB 323 MB/s
-     aws_obj_put_duration...: avg=629.38ms min=64.32ms  med=521.35ms max=5.36s p(90)=1.08s p(95)=1.39s
-     aws_obj_put_success....: 185567 307.947157/s
-     data_received..........: 0 B    0 B/s
-     data_sent..............: 194 GB 323 MB/s
-     iteration_duration.....: avg=647.23ms min=308.99µs med=539.01ms max=5.38s p(90)=1.1s  p(95)=1.4s 
-     iterations.............: 185567 307.947157/s
-     vus....................: 19     min=19       max=200
-
-running (10m02.6s), 000/200 VUs, 185567 complete and 0 interrupted iterations
-write ✓ [======================================] 200 VUs  10m0s
-
-INFO[21:06:31] Load started at:               Sun Oct 06 2024 21:06:31 GMT+0000 (UTC)  source=console
-INFO[21:16:33] Load finished at:              Sun Oct 06 2024 21:16:33 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_put_bytes......: 192 GB 320 MB/s
-     aws_obj_put_duration...: avg=636.9ms min=61.22ms  med=529.61ms max=5.47s p(90)=1.09s p(95)=1.39s
-     aws_obj_put_success....: 183501 304.718803/s
-     data_received..........: 0 B    0 B/s
-     data_sent..............: 192 GB 319 MB/s
-     iteration_duration.....: avg=654.9ms min=257.41µs med=547.54ms max=5.49s p(90)=1.11s p(95)=1.41s
-     iterations.............: 183501 304.718803/s
-     vus....................: 16     min=16       max=200
-
-running (10m02.2s), 000/200 VUs, 183501 complete and 0 interrupted iterations
-write ✓ [======================================] 200 VUs  10m0s
-
-
-### 4 nodes 1mb read
-NFO[21:25:12] Load started at:               Sun Oct 06 2024 21:25:12 GMT+0000 (UTC)  source=console
-INFO[21:35:13] Load finished at:              Sun Oct 06 2024 21:35:13 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 409 GB 680 MB/s
-     aws_obj_get_duration...: avg=307.89ms min=23.38ms  med=266.79ms max=5.19s p(90)=516.45ms p(95)=611.07ms
-     aws_obj_get_success....: 389648 648.635301/s
-     data_received..........: 409 GB 680 MB/s
-     data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=307.99ms min=176.22µs med=266.89ms max=5.19s p(90)=516.54ms p(95)=611.19ms
-     iterations.............: 389648 648.635301/s
-     vus....................: 200    min=200      max=200
-
-running (10m00.7s), 000/200 VUs, 389648 complete and 0 interrupted iterations
-read ✓ [======================================] 200 VUs  10m0s
-
-INFO[21:25:12] Load started at:               Sun Oct 06 2024 21:25:12 GMT+0000 (UTC)  source=console
-INFO[21:35:13] Load finished at:              Sun Oct 06 2024 21:35:13 GMT+0000 (UTC)  source=console
-     █ setup
-
-     █ teardown
-
-     aws_obj_get_bytes......: 419 GB 697 MB/s
-     aws_obj_get_duration...: avg=300.49ms min=25.54ms  med=259.99ms max=4.93s p(90)=505.66ms p(95)=599.94ms
-     aws_obj_get_success....: 399317 664.302562/s
-     data_received..........: 419 GB 697 MB/s
-     data_sent..............: 0 B    0 B/s
-     iteration_duration.....: avg=300.59ms min=222.76µs med=260.09ms max=4.93s p(90)=505.76ms p(95)=600.06ms
-     iterations.............: 399317 664.302562/s
-     vus....................: 1      min=1        max=200
-
-running (10m01.1s), 000/200 VUs, 399317 complete and 0 interrupted iterations
-read ✓ [======================================] 200 VUs  10m0s

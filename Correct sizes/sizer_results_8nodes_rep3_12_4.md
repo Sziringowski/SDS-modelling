@@ -3,7 +3,6 @@ HW_chassis=VEGMAN
 SSD=4
 HDD=12
 
-
 ### 8 nodes 8kb write
 INFO[10:14:02] Load started at:               Tue Feb 04 2025 10:14:02 GMT+0000 (UTC)  source=console
 INFO[10:24:03] Load finished at:              Tue Feb 04 2025 10:24:03 GMT+0000 (UTC)  source=console
@@ -42,6 +41,25 @@ INFO[12:41:10] Load finished at:              Fri Jan 24 2025 12:41:10 GMT+0000 
 running (10m00.1s), 0000/1240 VUs, 9667230 complete and 0 interrupted iterations
 read ✓ [======================================] 1240 VUs  10m0s
 
+### 8 nodes 128kb write
+INFO[10:11:08] Load started at:               Wed Feb 05 2025 10:11:08 GMT+0000 (UTC)  source=console
+INFO[10:21:10] Load finished at:              Wed Feb 05 2025 10:21:10 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 87 GB   144 MB/s
+     aws_obj_put_duration...: avg=496.5ms  min=19.06ms med=79.58ms max=7m6s p(90)=237.54ms p(95)=301.33ms
+     aws_obj_put_fails......: 421692  696.987923/s
+     aws_obj_put_success....: 663150  1096.078514/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 87 GB   144 MB/s
+     iteration_duration.....: avg=594.69ms min=134.8µs med=96.73ms max=7m6s p(90)=433.52ms p(95)=804.05ms
+     iterations.............: 1084842 1793.066437/s
+     vus....................: 1200    min=1200      max=1200
+
+running (10m05.0s), 0000/1200 VUs, 1084842 complete and 1200 interrupted iterations
+write ✓ [======================================] 1200 VUs  10m0s
 
 ### 8 nodes 128kb read
 INFO[12:03:35] Load started at:               Fri Jan 31 2025 12:03:35 GMT+0000 (UTC)  source=console
@@ -62,6 +80,26 @@ INFO[12:13:36] Load finished at:              Fri Jan 31 2025 12:13:36 GMT+0000 
 
 running (10m00.3s), 0000/1200 VUs, 7160486 complete and 0 interrupted iterations
 read ✓ [======================================] 1200 VUs  10m0s
+
+### 8 nodes 1mib write
+INFO[11:14:19] Load started at:               Tue Feb 04 2025 11:14:19 GMT+0000 (UTC)  source=console
+INFO[11:24:20] Load finished at:              Tue Feb 04 2025 11:24:20 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 204 GB 337 MB/s
+     aws_obj_put_duration...: avg=1.42s    min=48.8ms  med=198.98ms max=5m7s p(90)=388.44ms p(95)=472.34ms
+     aws_obj_put_fails......: 291633 482.0226/s
+     aws_obj_put_success....: 194543 321.548394/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 204 GB 337 MB/s
+     iteration_duration.....: avg=803.33ms min=86.45µs med=92.55ms  max=5m7s p(90)=307.51ms p(95)=388.59ms
+     iterations.............: 486176 803.570994/s
+     vus....................: 403    min=403      max=800
+
+running (10m00.6s), 000/800 VUs, 486176 complete and 0 interrupted iterations
+write ✓ [======================================] 800 VUs  10m0s
 
 ### 8 nodes 1mib read
 INFO[13:28:56] Load started at:               Fri Jan 31 2025 13:28:56 GMT+0000 (UTC)  source=console

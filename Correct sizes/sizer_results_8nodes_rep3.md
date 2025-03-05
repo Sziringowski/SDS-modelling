@@ -1,6 +1,7 @@
 protection=3REP
 HW_chassis=VEGMAN
 SSD=4
+HDD=12
 
 ### 8 nodes 8kb write
 INFO[10:14:02] Load started at:               Tue Feb 04 2025 10:14:02 GMT+0000 (UTC)  source=console

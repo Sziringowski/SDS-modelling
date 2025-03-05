@@ -1,6 +1,7 @@
 protection=2REP
 HW_chassis=VEGMAN
 SSD=4
+HDD=12
 
 
 ### 8 nodes 8kb write
