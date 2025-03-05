@@ -152,7 +152,7 @@ INFO[10:46:54] Load finished at:              Wed Oct 30 2024 10:46:54 GMT+0000 
 running (10m00.6s), 0000/1120 VUs, 5633167 complete and 0 interrupted iterations
 read ✓ [======================================] 1120 VUs  10m0s
 
-### 16 nodes 1mib write
+### 16 nodes 1mb write
 INFO[11:25:57] Load started at:               Wed Oct 30 2024 11:25:57 GMT+0000 (UTC)  source=console
 INFO[11:35:59] Load finished at:              Wed Oct 30 2024 11:35:59 GMT+0000 (UTC)  source=console
      █ setup
@@ -189,7 +189,7 @@ INFO[11:35:59] Load finished at:              Wed Oct 30 2024 11:35:59 GMT+0000 
 running (10m00.3s), 000/760 VUs, 615285 complete and 0 interrupted iterations
 write ✓ [======================================] 760 VUs  10m0s
 
-### 16 nodes 1mib read
+### 16 nodes 1mb read
 INFO[12:00:25] Load started at:               Wed Oct 30 2024 12:00:25 GMT+0000 (UTC)  source=console
 INFO[12:10:25] Load finished at:              Wed Oct 30 2024 12:10:25 GMT+0000 (UTC)  source=console
      █ setup
@@ -226,7 +226,7 @@ INFO[12:10:26] Load finished at:              Wed Oct 30 2024 12:10:26 GMT+0000 
 running (10m00.4s), 000/760 VUs, 1746032 complete and 0 interrupted iterations
 read ✓ [======================================] 760 VUs  10m0s
 
-### 16 nodes 128mib write
+### 16 nodes 128mb write
 INFO[13:38:52] Load started at:               Sat Nov 02 2024 13:38:52 GMT+0000 (UTC)  source=console
 INFO[13:48:57] Load finished at:              Sat Nov 02 2024 13:48:57 GMT+0000 (UTC)  source=console
      █ setup
@@ -263,7 +263,7 @@ INFO[13:48:59] Load finished at:              Sat Nov 02 2024 13:48:59 GMT+0000 
 running (10m05.7s), 000/160 VUs, 5648 complete and 117 interrupted iterations
 write ✓ [======================================] 160 VUs  10m0s
 
-### 16 nodes 128mib read
+### 16 nodes 128mb read
 INFO[14:10:54] Load started at:               Sat Nov 02 2024 14:10:54 GMT+0000 (UTC)  source=console
 INFO[14:20:57] Load finished at:              Sat Nov 02 2024 14:20:57 GMT+0000 (UTC)  source=console
      █ setup
@@ -374,7 +374,7 @@ INFO[15:54:04] Load finished at:              Fri Nov 01 2024 15:54:04 GMT+0000 
 running (10m00.5s), 0000/1125 VUs, 4968685 complete and 0 interrupted iterations
 read ✓ [======================================] 1125 VUs  10m0s
 
-### 15 nodes 1mib write
+### 15 nodes 1mb write
 INFO[16:00:01] Load started at:               Fri Nov 01 2024 16:00:01 GMT+0000 (UTC)  source=console
 INFO[16:10:03] Load finished at:              Fri Nov 01 2024 16:10:03 GMT+0000 (UTC)  source=console
      █ setup
@@ -411,7 +411,7 @@ INFO[16:10:03] Load finished at:              Fri Nov 01 2024 16:10:03 GMT+0000 
 running (10m00.6s), 000/750 VUs, 594213 complete and 0 interrupted iterations
 write ✓ [======================================] 750 VUs  10m0s
 
-### 15 nodes 1mib read
+### 15 nodes 1mb read
 INFO[16:22:31] Load started at:               Fri Nov 01 2024 16:22:31 GMT+0000 (UTC)  source=console
 INFO[16:32:32] Load finished at:              Fri Nov 01 2024 16:32:32 GMT+0000 (UTC)  source=console
      █ setup
@@ -448,7 +448,7 @@ INFO[16:32:31] Load finished at:              Fri Nov 01 2024 16:32:31 GMT+0000 
 running (10m00.6s), 000/750 VUs, 1609796 complete and 0 interrupted iterations
 read ✓ [======================================] 750 VUs  10m0s
 
-### 15 nodes 128mib write
+### 15 nodes 128mb write
 INFO[16:38:30] Load started at:               Fri Nov 01 2024 16:38:30 GMT+0000 (UTC)  source=console
 INFO[16:48:36] Load finished at:              Fri Nov 01 2024 16:48:36 GMT+0000 (UTC)  source=console
      █ setup
@@ -487,7 +487,7 @@ INFO[16:48:37] Load finished at:              Fri Nov 01 2024 16:48:37 GMT+0000 
 running (10m05.5s), 000/150 VUs, 5448 complete and 101 interrupted iterations
 write ✓ [======================================] 150 VUs  10m0s
 
-### 15 nodes 128mib read
+### 15 nodes 128mb read
 INFO[17:01:23] Load started at:               Fri Nov 01 2024 17:01:23 GMT+0000 (UTC)  source=console
 INFO[17:11:29] Load finished at:              Fri Nov 01 2024 17:11:29 GMT+0000 (UTC)  source=console
      █ setup
@@ -676,7 +676,7 @@ INFO[08:21:38] Load finished at:              Sat Nov 02 2024 08:21:38 GMT+0000 
 running (10m00.5s), 000/810 VUs, 3857773 complete and 0 interrupted iterations
 read ✓ [======================================] 810 VUs  10m0s
  
-### 12 nodes 1mib write
+### 12 nodes 1mb write
 INFO[09:11:46] Load started at:               Sat Nov 02 2024 09:11:46 GMT+0000 (UTC)  source=console
 INFO[09:21:46] Load finished at:              Sat Nov 02 2024 09:21:46 GMT+0000 (UTC)  source=console
      █ setup
@@ -713,7 +713,7 @@ INFO[09:21:45] Load finished at:              Sat Nov 02 2024 09:21:45 GMT+0000 
 running (10m01.2s), 000/600 VUs, 503294 complete and 0 interrupted iterations
 write ✓ [======================================] 600 VUs  10m0s
 
-### 12 nodes 1mib read
+### 12 nodes 1mb read
 INFO[09:32:03] Load started at:               Sat Nov 02 2024 09:32:03 GMT+0000 (UTC)  source=console
 INFO[09:42:03] Load finished at:              Sat Nov 02 2024 09:42:03 GMT+0000 (UTC)  source=console
      █ setup
@@ -751,7 +751,7 @@ running (10m00.6s), 000/600 VUs, 1337536 complete and 0 interrupted iterations
 read ✓ [======================================] 600 VUs  10m0s
 
 
-### 12 nodes 128mib write
+### 12 nodes 128mb write
 INFO[11:14:47] Load started at:               Sat Nov 02 2024 11:14:47 GMT+0000 (UTC)  source=console
 INFO[11:24:52] Load finished at:              Sat Nov 02 2024 11:24:52 GMT+0000 (UTC)  source=console
      █ setup
@@ -788,7 +788,7 @@ INFO[11:24:52] Load finished at:              Sat Nov 02 2024 11:24:52 GMT+0000 
 running (10m05.7s), 000/120 VUs, 4323 complete and 78 interrupted iterations
 write ✓ [======================================] 120 VUs  10m0s
 
-### 12 nodes 128mib read
+### 12 nodes 128mb read
 INFO[11:43:23] Load started at:               Sat Nov 02 2024 11:43:23 GMT+0000 (UTC)  source=console
 INFO[11:53:26] Load finished at:              Sat Nov 02 2024 11:53:26 GMT+0000 (UTC)  source=console
      █ setup
@@ -975,7 +975,7 @@ INFO[18:48:29] Load finished at:              Fri Nov 01 2024 18:48:29 GMT+0000 
 running (10m00.5s), 000/540 VUs, 2731880 complete and 0 interrupted iterations
 read ✓ [======================================] 540 VUs  10m0s
 
-### 8 nodes 1mib write
+### 8 nodes 1mb write
 INFO[18:54:37] Load started at:               Fri Nov 01 2024 18:54:37 GMT+0000 (UTC)  source=console
 INFO[19:04:39] Load finished at:              Fri Nov 01 2024 19:04:39 GMT+0000 (UTC)  source=console
      █ setup
@@ -1013,7 +1013,7 @@ INFO[19:04:40] Load finished at:              Fri Nov 01 2024 19:04:40 GMT+0000 
 running (10m00.8s), 000/400 VUs, 337460 complete and 0 interrupted iterations
 write ✓ [======================================] 400 VUs  10m0s
 
-### 8 nodes 1mib read
+### 8 nodes 1mb read
 INFO[19:16:42] Load started at:               Fri Nov 01 2024 19:16:42 GMT+0000 (UTC)  source=console
 INFO[19:26:43] Load finished at:              Fri Nov 01 2024 19:26:43 GMT+0000 (UTC)  source=console
      █ setup
@@ -1050,7 +1050,7 @@ INFO[19:26:41] Load finished at:              Fri Nov 01 2024 19:26:41 GMT+0000 
 running (10m00.5s), 000/400 VUs, 883851 complete and 0 interrupted iterations
 read ✓ [======================================] 400 VUs  10m0s
 
-### 8 nodes 128mib write
+### 8 nodes 128mb write
 INFO[19:43:54] Load started at:               Fri Nov 01 2024 19:43:54 GMT+0000 (UTC)  source=console
 INFO[19:53:59] Load finished at:              Fri Nov 01 2024 19:53:59 GMT+0000 (UTC)  source=console
      █ setup
@@ -1088,7 +1088,7 @@ INFO[19:54:02] Load finished at:              Fri Nov 01 2024 19:54:02 GMT+0000 
 running (10m05.6s), 00/80 VUs, 3121 complete and 42 interrupted iterations
 write ✓ [======================================] 80 VUs  10m0s
 
-### 8 nodes 128mib read
+### 8 nodes 128mb read
 INFO[20:06:10] Load started at:               Fri Nov 01 2024 20:06:10 GMT+0000 (UTC)  source=console
 INFO[20:16:16] Load finished at:              Fri Nov 01 2024 20:16:16 GMT+0000 (UTC)  source=console
      █ setup
@@ -1162,7 +1162,7 @@ INFO[14:00:27] Load finished at:              Wed Oct 30 2024 14:00:27 GMT+0000 
 running (10m02.9s), 000/290 VUs, 738149 complete and 0 interrupted iterations
 write ✓ [======================================] 290 VUs  10m0s
 
-### 4 nodes 8kb write filled cluster
+### 4 nodes 8kb write
 INFO[14:16:14] Load started at:               Wed Oct 30 2024 14:16:14 GMT+0000 (UTC)  source=console
 INFO[14:26:16] Load finished at:              Wed Oct 30 2024 14:26:16 GMT+0000 (UTC)  source=console
      █ setup
@@ -1310,7 +1310,7 @@ INFO[15:53:31] Load finished at:              Wed Oct 30 2024 15:53:31 GMT+0000 
 running (10m00.3s), 000/270 VUs, 1729146 complete and 0 interrupted iterations
 read ✓ [======================================] 270 VUs  10m0s
 
-### 4 nodes 1mib write
+### 4 nodes 1mb write
 INFO[07:36:49] Load started at:               Thu Oct 31 2024 07:36:49 GMT+0000 (UTC)  source=console
 INFO[07:46:50] Load finished at:              Thu Oct 31 2024 07:46:50 GMT+0000 (UTC)  source=console
      █ setup
@@ -1347,7 +1347,7 @@ INFO[07:46:51] Load finished at:              Thu Oct 31 2024 07:46:51 GMT+0000 
 running (10m00.2s), 000/190 VUs, 178269 complete and 0 interrupted iterations
 write ✓ [======================================] 190 VUs  10m0s
 
-### 4 nodes 1mib read
+### 4 nodes 1mb read
 INFO[08:08:11] Load started at:               Thu Oct 31 2024 08:08:11 GMT+0000 (UTC)  source=console
 INFO[08:18:12] Load finished at:              Thu Oct 31 2024 08:18:12 GMT+0000 (UTC)  source=console
      █ setup
@@ -1384,7 +1384,7 @@ INFO[08:18:10] Load finished at:              Thu Oct 31 2024 08:18:10 GMT+0000 
 running (10m00.3s), 000/190 VUs, 551638 complete and 0 interrupted iterations
 read ✓ [======================================] 190 VUs  10m0s
 
-### 4 nodes 128mib write
+### 4 nodes 128mb write
 INFO[09:13:38] Load started at:               Thu Oct 31 2024 09:13:38 GMT+0000 (UTC)  source=console
 INFO[09:23:44] Load finished at:              Thu Oct 31 2024 09:23:44 GMT+0000 (UTC)  source=console
      █ setup
@@ -1421,7 +1421,7 @@ INFO[09:23:42] Load finished at:              Thu Oct 31 2024 09:23:42 GMT+0000 
 running (10m05.7s), 00/40 VUs, 1538 complete and 30 interrupted iterations
 write ✓ [======================================] 40 VUs  10m0s
 
-### 4 nodes 128mib read
+### 4 nodes 128mb read
 INFO[09:25:00] Load started at:               Thu Oct 31 2024 09:25:00 GMT+0000 (UTC)  source=console
 INFO[09:35:02] Load finished at:              Thu Oct 31 2024 09:35:02 GMT+0000 (UTC)  source=console
      █ setup

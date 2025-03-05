@@ -3,7 +3,6 @@ HW_chassis=VEGMAN
 SSD=4
 HDD=12
 
-
 ### 8 nodes 8kb write
 INFO[14:04:18] Load started at:               Wed Nov 27 2024 14:04:18 GMT+0000 (UTC)  source=console
 INFO[14:14:18] Load finished at:              Wed Nov 27 2024 14:14:18 GMT+0000 (UTC)  source=console
@@ -23,6 +22,47 @@ ERRO[14:14:19] failed to handle the end-of-test summary      error="Could not sa
 
 running (10m00.2s), 0000/1240 VUs, 4203625 complete and 0 interrupted iterations
 write ✓ [======================================] 1240 VUs  10m0s
+
+### 8 nodes 8kb read
+INFO[14:24:20] Load started at:               Wed Nov 27 2024 14:24:20 GMT+0000 (UTC)  source=console
+INFO[14:25:20] Load finished at:              Wed Nov 27 2024 14:25:20 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 4.9 GB 81 MB/s
+     aws_obj_get_duration...: avg=125.29ms min=14.46ms  med=111.2ms  max=1.36s p(90)=193.1ms  p(95)=233.44ms
+     aws_obj_get_success....: 593067 9860.143373/s
+     data_received..........: 4.8 GB 81 MB/s
+     data_sent..............: 0 B    0 B/s
+     iteration_duration.....: avg=125.37ms min=424.62µs med=111.28ms max=1.36s p(90)=193.17ms p(95)=233.53ms
+     iterations.............: 593067 9860.143373/s
+     vus....................: 1240   min=1240      max=1240
+ERRO[14:25:20] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+
+running (1m00.1s), 0000/1240 VUs, 593067 complete and 0 interrupted iterations
+read ✓ [======================================] 1240 VUs  1m0s
+
+### 8 nodes 128kb write
+INFO[17:05:42] Load started at:               Wed Nov 27 2024 17:05:42 GMT+0000 (UTC)  source=console
+INFO[17:15:44] Load finished at:              Wed Nov 27 2024 17:15:44 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 12 GB 20 MB/s
+     aws_obj_put_duration...: avg=4.73s min=19.24ms med=57.28ms max=9m57s p(90)=185.17ms p(95)=270.58ms
+     aws_obj_put_fails......: 627   1.03633/s
+     aws_obj_put_success....: 90301 149.253063/s
+     data_received..........: 0 B   0 B/s
+     data_sent..............: 12 GB 20 MB/s
+     iteration_duration.....: avg=5.12s min=222.2µs med=67.2ms  max=9m57s p(90)=203.59ms p(95)=314.25ms
+     iterations.............: 90928 150.289393/s
+     vus....................: 942   min=942      max=1200
+ERRO[17:15:44] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+
+running (10m05.0s), 0000/1200 VUs, 90928 complete and 933 interrupted iterations
+write ✓ [======================================] 1200 VUs  10m0s
 
 ### 8 nodes 128kb read
 INFO[17:20:42] Load started at:               Wed Nov 27 2024 17:20:42 GMT+0000 (UTC)  source=console
@@ -44,6 +84,26 @@ ERRO[17:30:44] failed to handle the end-of-test summary      error="Could not sa
 running (10m00.1s), 0000/1200 VUs, 7723748 complete and 0 interrupted iterations
 read ✓ [======================================] 1200 VUs  10m0s
 
+### 8 nodes 1mib write
+INFO[12:12:37] Load started at:               Fri Dec 06 2024 12:12:37 GMT+0000 (UTC)  source=console
+INFO[12:22:41] Load finished at:              Fri Dec 06 2024 12:22:41 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 66 GB 109 MB/s
+     aws_obj_put_duration...: avg=1.98s min=45.24ms  med=88.05ms  max=8m6s p(90)=294.54ms p(95)=469.26ms
+     aws_obj_put_fails......: 511   0.844598/s
+     aws_obj_put_success....: 62922 103.999646/s
+     data_received..........: 0 B   0 B/s
+     data_sent..............: 66 GB 109 MB/s
+     iteration_duration.....: avg=2.39s min=181.56µs med=104.99ms max=8m6s p(90)=323.87ms p(95)=571.71ms
+     iterations.............: 63433 104.844245/s
+     vus....................: 787   min=787      max=800
+ERRO[12:22:41] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+
+running (10m05.0s), 000/800 VUs, 63433 complete and 786 interrupted iterations
+write ✓ [======================================] 800 VUs  10m0s
 
 ### 8 nodes 1mib read
 INFO[15:45:49] Load started at:               Wed Nov 27 2024 15:45:49 GMT+0000 (UTC)  source=console
@@ -128,27 +188,26 @@ ERRO[11:59:26] failed to handle the end-of-test summary      error="Could not sa
 running (10m00.2s), 0000/1085 VUs, 4311105 complete and 0 interrupted iterations
 write ✓ [======================================] 1085 VUs  10m0s
 
-### 7 nodes 8kb read
-INFO[14:53:33 ] Load started at:               Wed Dec 04 2024 14:53:33 GMT+0000 (UTC)  source=console
-INFO[15:03:37] Load finished at:              Wed Dec 04 2024 15:03:37 GMT+0000 (UTC)  source=console
+### 7 nodes 128kb write
+INFO[10:55:16] Load started at:               Thu Dec 05 2024 10:55:16 GMT+0000 (UTC)  source=console
+INFO[11:05:20] Load finished at:              Thu Dec 05 2024 11:05:20 GMT+0000 (UTC)  source=console
      █ setup
 
      █ teardown
 
-     aws_obj_get_bytes......: 73 GB   121 MB/s
-     aws_obj_get_duration...: avg=73.21ms min=5.31ms   med=56.51ms max=3.66s p(90)=140.58ms p(95)=183.8ms 
-     aws_obj_get_fails......: 425     0.708037/s
-     aws_obj_get_success....: 8881440 14796.217575/s
-     data_received..........: 73 GB   121 MB/s
-     data_sent..............: 0 B     0 B/s
-     iteration_duration.....: avg=73.27ms min=211.19µs med=56.58ms max=3.66s p(90)=140.65ms p(95)=183.87ms
-     iterations.............: 8881865 14796.925613/s
-     vus....................: 1085    min=1085       max=1085
-     vus_max................: 1085    min=1085  ERRO[15:03:39] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+     aws_obj_put_bytes......: 7.4 GB 24 MB/s
+     aws_obj_put_duration...: avg=1.52s min=22.86ms  med=99.57ms  max=4m31s p(90)=240.9ms  p(95)=317.27ms
+     aws_obj_put_fails......: 439    1.439265/s
+     aws_obj_put_success....: 56132  184.029227/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 7.3 GB 24 MB/s
+     iteration_duration.....: avg=1.98s min=222.75µs med=112.25ms max=4m31s p(90)=259.15ms p(95)=351.6ms 
+     iterations.............: 56571  185.468492/s
+     vus....................: 795    min=795      max=800
+ERRO[11:05:20] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
 
-running (10m00.3s), 0000/1085 VUs, 8881865 complete and 0 interrupted iterations
-read ✓ [======================] 1085 VUs  10m0s
-
+running (5m05.0s), 000/800 VUs, 56571 complete and 794 interrupted iterations
+write ✓ [======================================] 800 VUs  5m0s
 
 ### 7 nodes 128kb read
 INFO[11:27:25] Load started at:               Thu Dec 05 2024 11:27:25 GMT+0000 (UTC)  source=console
@@ -169,6 +228,27 @@ ERRO[11:37:26] failed to handle the end-of-test summary      error="Could not sa
 
 running (10m00.1s), 000/800 VUs, 7037867 complete and 0 interrupted iterations
 read ✓ [======================================] 800 VUs  10m0s
+
+### 7 nodes 1mib write
+INFO[15:12:17] Load started at:               Thu Nov 28 2024 15:12:17 GMT+0000 (UTC)  source=console
+INFO[15:22:20] Load finished at:              Thu Nov 28 2024 15:22:20 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 65 GB 108 MB/s
+     aws_obj_put_duration...: avg=2.98s min=43.68ms  med=150.62ms max=8m38s p(90)=464.69ms p(95)=680.16ms
+     aws_obj_put_fails......: 546   0.902451/s
+     aws_obj_put_success....: 62004 102.482756/s
+     data_received..........: 0 B   0 B/s
+     data_sent..............: 65 GB 107 MB/s
+     iteration_duration.....: avg=3.49s min=225.08µs med=168.26ms max=8m38s p(90)=502.71ms p(95)=763.82ms
+     iterations.............: 62550 103.385207/s
+     vus....................: 700   min=700      max=700
+ERRO[15:22:20] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+
+running (10m05.0s), 000/700 VUs, 62550 complete and 700 interrupted iterations
+write ✓ [======================================] 700 VUs  10m0s
 
 ### 7 nodes 1mib read
 INFO[11:39:18] Load started at:               Mon Dec 09 2024 11:39:18 GMT+0000 (UTC)  source=console
@@ -355,6 +435,26 @@ ERRO[15:00:09] failed to handle the end-of-test summary      error="Could not sa
 running (10m00.4s), 000/600 VUs, 1892955 complete and 0 interrupted iterations
 read ✓ [======================================] 600 VUs  10m0s
 
+### 6 nodes 128mib write
+INFO[15:12:15] Load started at:               Mon Dec 09 2024 15:12:15 GMT+0000 (UTC)  source=console
+INFO[15:22:16] Load finished at:              Mon Dec 09 2024 15:22:16 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 1.1 TB 1.9 GB/s
+     aws_obj_put_duration...: avg=12.35s min=3.34s    med=10.05s max=1m23s p(90)=20.65s p(95)=26.56s
+     aws_obj_put_fails......: 15     0.024772/s
+     aws_obj_put_success....: 8392   13.858888/s
+     data_received..........: 0 B    0 B/s
+     data_sent..............: 1.1 TB 1.9 GB/s
+     iteration_duration.....: avg=12.79s min=220.89µs med=10.42s max=1m24s p(90)=21.06s p(95)=27.28s
+     iterations.............: 8392   13.858888/s
+     vus....................: 9      min=0       max=180
+ERRO[15:22:16] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+
+running (10m05.5s), 000/180 VUs, 8392 complete and 84 interrupted iterations
+write ✓ [======================================] 180 VUs  10m0s
 
 ### 6 nodes 128mib read
 INFO[15:30:51] Load started at:               Mon Dec 09 2024 15:30:51 GMT+0000 (UTC)  source=console
@@ -396,6 +496,45 @@ ERRO[07:39:53] failed to handle the end-of-test summary      error="Could not sa
 running (10m00.1s), 000/775 VUs, 3008731 complete and 0 interrupted iterations
 write ✓ [======================================] 775 VUs  10m0s
 
+### 5 nodes 8kb read
+INFO[07:44:19] Load started at:               Tue Dec 10 2024 07:44:19 GMT+0000 (UTC)  source=console
+INFO[07:54:19] Load finished at:              Tue Dec 10 2024 07:54:19 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_get_bytes......: 33 GB   55 MB/s
+     aws_obj_get_duration...: avg=116.28ms min=5.21ms   med=74.76ms max=3.11s p(90)=270.24ms p(95)=366.43ms
+     aws_obj_get_success....: 3996111 6657.23101/s
+     data_received..........: 33 GB   55 MB/s
+     data_sent..............: 0 B     0 B/s
+     iteration_duration.....: avg=116.35ms min=240.74µs med=74.83ms max=3.11s p(90)=270.31ms p(95)=366.5ms 
+     iterations.............: 3996111 6657.23101/s
+     vus....................: 775     min=775      max=775
+ERRO[07:54:20] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+
+running (10m00.3s), 000/775 VUs, 3996111 complete and 0 interrupted iterations
+read ✓ [======================================] 775 VUs  10m0s
+
+### 5 nodes 128kb write
+INFO[08:12:58] Load started at:               Tue Dec 10 2024 08:12:58 GMT+0000 (UTC)  source=console
+INFO[08:22:59] Load finished at:              Tue Dec 10 2024 08:22:59 GMT+0000 (UTC)  source=console
+     █ setup
+
+     █ teardown
+
+     aws_obj_put_bytes......: 197 GB  328 MB/s
+     aws_obj_put_duration...: avg=289ms   min=25.39ms med=260.5ms  max=2.01s p(90)=492.59ms p(95)=583.64ms
+     aws_obj_put_success....: 1505946 2505.783242/s
+     data_received..........: 0 B     0 B/s
+     data_sent..............: 197 GB  327 MB/s
+     iteration_duration.....: avg=298.9ms min=3.46ms  med=270.37ms max=2.01s p(90)=502.52ms p(95)=593.62ms
+     iterations.............: 1505946 2505.783242/s
+     vus....................: 24      min=24        max=750
+ERRO[08:22:59] failed to handle the end-of-test summary      error="Could not save some summary information:\n\t- could not open '/tmp/summary.json': open /tmp/summary.json: permission denied"
+
+running (10m01.0s), 000/750 VUs, 1505946 complete and 0 interrupted iterations
+write ✓ [======================================] 750 VUs  10m0s
 
 ### 5 nodes 128kb read
 INFO[08:30:43] Load started at:               Tue Dec 10 2024 08:30:43 GMT+0000 (UTC)  source=console
